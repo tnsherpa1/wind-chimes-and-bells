@@ -1,0 +1,65 @@
+/* 
+*	Name of design: Products Filter for Magento
+*	Designer: Plumrocket Inc
+*	Copyright status: All rights reserved
+*	Website: www.plumrocket.com
+*/      
+
+
+/*Filter*/
+.product-filter {
+	border-bottom: 0px;
+}
+
+.product-filter-param {
+	background-color: #f5f5f5;
+	margin-top: 10px;
+}
+
+.product-filter .selector {
+	line-height: 23px;
+}
+
+.product-filter .selector .icon {
+	padding: 10px 8px 0px 7px;
+}
+
+.product-filter .filter_send {
+	background-color: #B02F39;
+	border: 1px solid #B02F39;
+}
+
+.product-filter .filter_send:hover {
+	background: #8a2930;
+}
+
+.product-filter-param .filter_options_attr .filter_options_item .close-fo, 
+.product-filter-param .filter-reset-all,
+.reset-filter-mobile .filter-reset-all,
+.product-filter .reset-filter {
+	color: #B02F39;
+}
+
+.product-filter .selector .icon:before {
+	border-color: #B02F39 transparent transparent transparent;
+}
+
+.product-filter .dropdowner .list:before {
+	border-color: #B02F39 transparent transparent transparent;
+	background-image: url(../../../images/plumrocket/productsfilter/filter_sprite.png);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	.product-filter .dropdowner .list:before {
+		background-image: url(../../../images/plumrocket/productsfilter/filter_sprite_retina.png);
+		background-size: 22px 50px;
+	}
+
+}

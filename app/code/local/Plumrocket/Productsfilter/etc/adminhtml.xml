@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<productsfilter translate="title" module="productsfilter">
+										<title>Plumrocket Product Filter Section</title>
+										<sort_order>1900</sort_order>
+									</productsfilter>
+								</children>
+							</config>
+						</children>
+					</system>
+					<plumrocket>
+						<title>Plumrocket</title>
+						<sort_order>80</sort_order>
+						<children>
+							<productsfilter translate="title" module="productsfilter">
+								<title>Product Filter</title>
+								<sort_order>550</sort_order>
+							</productsfilter>
+						</children>
+					</plumrocket>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	
+	<menu>
+		<plumrocket>
+			<title>Plumrocket</title>
+			<sort_order>80</sort_order>
+			<children>
+				<productsfilter module="productsfilter" translate="title">
+					<title>Product Filter</title>
+					<sort_order>550</sort_order>
+					<action>adminhtml/system_config/edit/section/productsfilter</action>
+				</productsfilter>
+			</children>
+		</plumrocket>
+	</menu>
+</config>

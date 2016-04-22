@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Plumrocket_Productsfilter>
+			<version>2.1.0</version>
+			<wiki>http://wiki.plumrocket.com/wiki/Magento_Product_Filter_Extension_v2.x</wiki>
+		</Plumrocket_Productsfilter>
+	</modules>
+
+	<frontend>
+		<layout>
+			<updates>
+				<productsfilter>
+					<file>productsfilter.xml</file>
+				</productsfilter>
+			</updates>
+		</layout>
+
+		<translate>
+            <modules>
+                <Plumrocket_Productsfilter>
+                    <files>
+                        <default>Plumrocket_Productsfilter.csv</default>
+                    </files>
+                </Plumrocket_Productsfilter>
+            </modules>
+        </translate>
+	</frontend>
+
+	<adminhtml>
+		<layout>
+			<updates>
+				<productsfilter>
+					<file>productsfilter.xml</file>
+				</productsfilter>
+			</updates>
+		</layout>
+	</adminhtml>
+
+	<global>
+		<helpers>
+			<productsfilter>
+				<class>Plumrocket_Productsfilter_Helper</class>
+			</productsfilter>
+		</helpers>
+		<blocks>
+			<productsfilter>
+				<class>Plumrocket_Productsfilter_Block</class>
+			</productsfilter>
+			<catalog>
+				<rewrite>
+					<product_list_toolbar>Plumrocket_Productsfilter_Block_Filter</product_list_toolbar>
+					<product_list>Plumrocket_Productsfilter_Block_List</product_list>
+				</rewrite>
+			</catalog>
+		</blocks>
+		<models>
+			<productsfilter>
+				<class>Plumrocket_Productsfilter_Model</class>
+				<resourceModel>productsfilter_mysql4</resourceModel>
+			</productsfilter>
+		</models>
+		
+		<resources>
+			<productsfilter_setup>
+				<setup>
+					<module>Plumrocket_Productsfilter</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</productsfilter_setup>
+			<productsfilter_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</productsfilter_write>
+			<productsfilter_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</productsfilter_read>
+		</resources>
+
+		<events>
+			<controller_action_layout_generate_blocks_after>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>generateBlocksAfter</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</controller_action_layout_generate_blocks_after>
+
+			<catalog_block_product_list_collection>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>initCollection</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</catalog_block_product_list_collection>			
+			
+
+			<!--
+			<controller_action_layout_render_before_catalog_category_view>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>layoutRenderBefore</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</controller_action_layout_render_before_catalog_category_view>
+
+			<controller_action_layout_render_before_catalogsearch_result_index>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>layoutRenderBeforeSearch</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</controller_action_layout_render_before_catalogsearch_result_index>
+		-->
+
+			<controller_front_init_before>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>controllerFrontInitBefore</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</controller_front_init_before>
+
+			<adminhtml_cache_flush_system>
+				<observers>
+					<plumrocket_productsfilter>
+						<class>productsfilter/observer</class>
+						<method>clearCache</method>
+					</plumrocket_productsfilter>
+				</observers>
+			</adminhtml_cache_flush_system>
+		</events>
+	</global>
+	
+	<default>
+		<productsfilter>
+			<general>
+				<enable>0</enable>
+			</general>
+			<attributes>
+				<enable_custom>1</enable_custom>
+				<mode>one</mode>
+				<placement>toolbar</placement>
+			</attributes>
+		</productsfilter>
+	</default>
+</config>

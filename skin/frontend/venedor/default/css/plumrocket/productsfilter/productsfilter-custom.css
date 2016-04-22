@@ -1,0 +1,127 @@
+/* 
+*	Name of design: Products Filter for Magento
+*	Designer: Plumrocket Inc
+*	Copyright status: All rights reserved
+*	Website: www.plumrocket.com
+*/      
+
+
+/*Filter Custom*/
+.toolbar {
+	padding: 0;
+}
+
+.product-filter {
+	margin-bottom: 10px;
+}
+
+.product-filter .selector .icon:after {
+	border-color: #7bae23 transparent transparent transparent;
+}
+
+.product-filter .filter-counter,
+.product-filter .reset-filter {
+	color: inherit;
+}
+
+.product-filter .reset-filter:hover {
+	color: #7bae23;
+}
+
+.product-filter .dropdowner .active-list {
+	border-color: #7bae23;
+	background-color: #7bae23;
+}
+
+.product-filter + .pager + .sorter .view-mode {
+	position: static;
+}
+
+.product-filter + .pager + .sorter .view-mode label,
+.product-filter + .pager + .sorter .view-mode strong,
+.product-filter + .pager + .sorter label,
+.product-filter + .pager + .sorter .sort-by {
+	padding: 0;
+	line-height: 33px;
+}
+
+.product-filter + .pager + .sorter label {
+	font-size: 13px;
+} 
+
+.product-filter + .pager .amount {
+	line-height: 33px;
+}
+
+.product-filter + .pager .limiter,
+.product-filter + .pager .limiter label {
+	line-height: 33px;
+	padding: 0;
+}
+
+.product-filter + .pager .limiter select {
+	height: 30px;
+}
+
+.product-filter + .pager {
+	padding: 0;
+}
+
+.product-filter + .pager .pages {
+	margin-left: 0;
+}
+
+.product-filter + .pager .limiter {
+	height: auto;
+	margin-bottom: 5px;
+}
+
+.product-filter + .pager + .sorter + .pages ol {
+	padding-left: 0;
+}
+
+.product-filter + .pager + .sorter .sort-by a.sort-asc,
+.product-filter + .pager + .sorter .sort-by a.sort-desc {
+	margin-top: 5px;
+}
+
+@media only screen and ( max-width: 1200px ) {
+
+	.product-filter + .pager .limiter {
+		position: static;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.product-filter + .pager,
+	.product-filter + .pager + .sorter {
+		width: 100%;
+		text-align: left;
+		padding-left: 0;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	.product-filter + .pager .limiter {
+		margin: 0;
+		float: none;
+	}
+
+	.product-filter + .pager + .sorter .view-mode label {
+		padding-left: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.product-filter + .pager .amount {
+		float: none;
+		margin-bottom: 0;
+	}
+
+}

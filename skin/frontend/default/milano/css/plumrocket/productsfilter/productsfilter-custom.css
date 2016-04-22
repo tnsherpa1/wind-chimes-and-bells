@@ -1,0 +1,85 @@
+/* 
+*	Name of design: Products Filter for Magento
+*	Designer: Plumrocket Inc
+*	Copyright status: All rights reserved
+*	Website: www.plumrocket.com
+*/      
+
+
+/*Filter*/
+.product-filter {
+	border-bottom: 0px;
+}
+
+.product-filter-param {
+	background: none;
+	margin-top: 10px;
+}
+
+.product-filter .selector {
+	line-height: 23px;
+}
+
+.product-filter .selector .icon {
+	padding: 10px 8px 0px 7px;
+}
+
+.product-filter .filter_send {
+	background-color: #3EC1CD;
+	border: 1px solid #3EC1CD;
+}
+
+.product-filter .filter_send:hover {
+	background: #34b6c3;
+}
+
+.product-filter-param .filter_options_attr .filter_options_item .close-fo, 
+.product-filter-param .filter-reset-all,
+.reset-filter-mobile .filter-reset-all,
+.product-filter .reset-filter {
+	color: #B3A487;
+}
+
+.product-filter .selector .icon:before {
+	border-color: #B3A487 transparent transparent transparent;
+}
+
+.product-filter .dropdowner .list:before {
+	border-color: #3EC1CD transparent transparent transparent;
+	background-image: url(../../../images/plumrocket/productsfilter/filter_sprite.png);
+}
+
+.product-filter .selector .dropdowner {
+	z-index: 100;
+}
+
+.product-filter-lock {
+    position: fixed;
+    display: none;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    height: 100%;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+	background-image: url("/skin/frontend/base/default/images/plumrocket/productsfilter/ajax-loader.gif");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	.product-filter .dropdowner .list:before {
+		background-image: url(../../../images/plumrocket/productsfilter/filter_sprite_retina.png);
+		background-size: 22px 50px;
+	}
+
+}

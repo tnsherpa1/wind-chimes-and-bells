@@ -1,0 +1,64 @@
+/* 
+*	Name of design: Products Filter for Magento
+*	Designer: Plumrocket Inc
+*	Copyright status: All rights reserved
+*	Website: www.plumrocket.com
+*/      
+
+
+/*Filter Custom*/
+.product-filter .selector .icon:after {
+	border-color: #d64c35 transparent transparent transparent;
+}
+
+.product-filter .filter-counter,
+.product-filter .reset-filter {
+	color: inherit;
+}
+
+.product-filter .reset-filter:hover {
+	color: #d64c35;
+}
+
+.product-filter .dropdowner .active-list {
+	border-color: #d64c35;
+	background-color: #d64c35;
+}
+
+.product-filter + .pager + .sorter .sort-by {
+	margin: 3px 10px 3px 0
+}
+
+.product-filter + .pager + .sorter .view-mode {
+	margin-top: 4px;
+}
+
+.product-filter + .pager .limiter {
+	margin-top: 5px;
+}
+
+.product-filter + .pager .amount {
+	line-height: 13px;
+}
+
+.product-filter + .pager + .sorter .sort-by a.sort-asc,
+.product-filter + .pager + .sorter .sort-by a.sort-desc {
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 479px) {
+
+	.product-filter + .pager .limiter {
+		padding-left: 0;
+	}
+
+}
+
+@media only screen and (max-width: 380px) {
+
+	.product-filter + .pager + .sorter .view-mode {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+}
