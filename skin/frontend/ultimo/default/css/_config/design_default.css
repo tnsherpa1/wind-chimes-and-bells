@@ -31,6 +31,7 @@ p.product-name a:hover
 	}
 
 .caret {
+	
 			border-top-color: #333333;
 	}
 
@@ -666,9 +667,9 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 
 	
-				.nav-regular
+		.nav-regular
 		{
-			background-color: #f8f8f8;
+			background-color: #b2c081;
 		}
 		.nav-regular .nav-item.level0 > a,
 
@@ -678,28 +679,28 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 				.nav-regular .nav-holder a.dropdown-heading:hover
 		{
-			color: #333333;
+			color: #ffffff;
 		}
 
 	
 				.nav-mobile .nav-item.level0 > a
 		{
 			background-color: #f8f8f8;
-			color: #333333;
+			color: #ffffff;
 		}
 		.nav-mobile .nav-item.level0 > .opener
 		{
-			color: #333333;
+			color: #ffffff;
 		}
 
 						#nav.nav-mobile ul.level0 .nav-item > a
 		{
 			background-color: #f8f8f8;
-			color: #333333;
+			color: #ffffff;
 		}
 		.nav-mobile ul.level0 .nav-item > .opener
 		{
-			color: #333333;
+			color: #ffffff;
 		}
 
 
