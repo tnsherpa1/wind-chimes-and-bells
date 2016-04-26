@@ -1656,10 +1656,11 @@ h3.product-name {
 	}
 	/* Show and Hide Item No. in Product View
 	----------------------------------------------------------------*/
-	div.showItemNo {
+	span.showItemNo {
+		color: #979797;
 		display: none;
 	}
-	li.item:hover div.showItemNo {
+	li.item:hover span.showItemNo {
 		display: block;
 	}
 	/* Align to the center

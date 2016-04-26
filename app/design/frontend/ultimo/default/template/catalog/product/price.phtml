@@ -32,6 +32,7 @@
  * @see Mage_Catalog_Block_Product_Abstract
  */
 ?>
+
 <?php
 $_coreHelper = $this->helper('core');
 $_weeeHelper = $this->helper('weee');
@@ -52,7 +53,11 @@ $_minimalPrice = $_taxHelper->getPrice($_product, $_minimalPriceValue, $_simpleP
 $_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->getFinalPrice()));
 $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
 ?>
-
+<span class="showItemNo">    
+    <?php 
+        echo "#".$_product->getSku();
+    ?>
+</span>
 <?php if (!$_product->isGrouped()): ?>
     <?php $_weeeTaxAmount = $_weeeHelper->getAmountForDisplay($_product); ?>
     <?php $_weeeTaxAttributes = $_weeeHelper->getProductWeeeAttributesForRenderer($_product, null, null, null, true); ?>
@@ -471,8 +476,4 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
         </div>
     <?php endif; /* if ($this->getDisplayMinimalPrice() && $_minimalPrice): */ ?>
 <?php endif; /* if (!$_product->isGrouped()): */ ?>
-<div class="showItemNo">    
-<?php 
-    echo $_product->getSku();
-?>
-</div>
+
