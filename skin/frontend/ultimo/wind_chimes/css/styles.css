@@ -1654,7 +1654,14 @@ h3.product-name {
 		overflow: visible;
 		white-space: normal;
 	}
-
+	/* Show and Hide Item No. in Product View
+	----------------------------------------------------------------*/
+	div.showItemNo {
+		display: none;
+	}
+	li.item:hover div.showItemNo {
+		display: block;
+	}
 	/* Align to the center
 	-------------------------------------------------------------- */
 	.products-grid.centered .item { text-align: center; }

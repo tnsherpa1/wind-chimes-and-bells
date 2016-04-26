@@ -21,7 +21,9 @@
 			<action method="addJs"><script>infortis/jquery/plugins/jquery.owlcarousel.min.js</script></action>
 			<action method="addJs"><script>infortis/jquery/plugins/imagesloaded.js</script></action>
 			<action method="addItem"><type>skin_js</type><name>js/app.js</name></action>
-			
+
+			<!-- Custom JS -->
+			<action method="addItem"><type>skin_js</type><name>../../ultimo/wind_chimes/js/script.js</name></action>
 		<!-- CSS: -->
 			
 			<!-- CSS base -->

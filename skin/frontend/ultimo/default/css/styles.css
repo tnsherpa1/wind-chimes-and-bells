@@ -1696,7 +1696,6 @@ h3.product-name {
 		-o-transition:		box-shadow 400ms ease-out;
 	}
 
-
 /* Grid: override grid elements to change size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -3450,7 +3449,6 @@ span.required em {
 */
 /* Home page */
 body.cms-index-index .breadcrumbs { display:none; }
-
 
 /* Magento widgets
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

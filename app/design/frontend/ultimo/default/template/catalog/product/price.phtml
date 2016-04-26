@@ -471,7 +471,8 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
         </div>
     <?php endif; /* if ($this->getDisplayMinimalPrice() && $_minimalPrice): */ ?>
 <?php endif; /* if (!$_product->isGrouped()): */ ?>
+<div class="showItemNo">    
 <?php 
-    $sku = Mage::getModel('catalog/product')->load($_product->getId())->getSku();
-    echo "#".$sku
+    echo $_product->getSku();
 ?>
+</div>
