@@ -391,13 +391,15 @@ span.icon.icon-color-productview {
 
 .form-search .input-text,
 .form-search .button {
-			color: #bbbbbb;
+			color: #698c9d;
+			padding: 5px;
+			font-size: 1.5em;
 	}
 .form-search .input-text:hover,
 .form-search .input-text:focus,
 .form-search .input-text:hover + .button,
 .form-search .button:hover {
-			color: #333333;
+			color: #de7b57;
 	}
 
 

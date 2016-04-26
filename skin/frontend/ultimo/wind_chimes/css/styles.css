@@ -926,10 +926,11 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 .form-search { position:relative; }
 .form-search label { float:left; margin:3px 4px 0 0; display:none; }
 .form-search .input-text {
+	border-radius: 7px;
 	float:right; /* Float in the same direction as position of button */
 	width:100%;
 	display: block;
-	height:36px;
+	height:45px;
 	line-height:36px; /*IE8*/
 	padding:0px 35px 0 7px;
 	color:#bbb;
@@ -1072,7 +1073,8 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 /* Mini-compare heading
 -------------------------------------------------------------- */
 .mini-compare .mini-compare-heading .ic {
-	font-size: 16px;
+	font-size: 30px;
+	color: #698c9d;
 	line-height: 1em;
 }
 
@@ -1702,6 +1704,12 @@ h3.product-name {
 		-o-transition:		box-shadow 400ms ease-out;
 	}
 
+/* Menu Bar Home Page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+.nav-regular.centered li.level0 {
+	margin-right: 25px;
+}
 
 /* Grid: override grid elements to change size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
