@@ -1668,7 +1668,7 @@ h3.product-name {
 	position: relative;
 	}
 	.play-button {
-	z-index: 99999;
+	z-index: 1;
 	color: #8fb3d1;
 	margin-top: -40px;
 	position: absolute;
