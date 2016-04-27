@@ -121,6 +121,7 @@
                     
                     <?php echo $helpLabels->getLabels($_product); //Product labels ?>
                 </a>
+                <a href="">HELLO</a>
             </div> <!-- end: product-image-wrapper -->
             <?php //Product description ?>
             <div class="product-shop grid12-5 mobile-grid-half">
@@ -244,17 +245,18 @@
                 <div class="product-image-wrapper" style="max-width:<?php echo $imgWidth; ?>px;">
                 
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" class="product-image">
-                        <img id="product-collection-image-<?php echo $_product->getId(); ?>"
+                        <img class="play-image" id="product-collection-image-<?php echo $_product->getId(); ?>"
                             src="<?php echo $helpImg->getImg($_product, $imgWidth, $imgHeight, 'small_image'); ?>"
                             alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" />
-
+                        <span class="play-button"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></span>
                         <?php if ($theme->getCfg('category/alt_image')): ?>
                             <?php echo $theme->getAltImgHtml($_product, $imgWidth, $imgHeight); ?>   
                         <?php endif; ?>
 
                         <?php echo $helpLabels->getLabels($_product); //Product labels ?>
                     </a>
-                
+
+                    
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && $gc['addtolinks_simple'])
                         {
@@ -335,7 +337,11 @@
                             echo $helpTemplate->getCategoryAddtoLinks($_product, $this->getAddToCompareUrl($_product), 'addto-gaps-right');
                         }
                     ?>
-                </div> <!-- end: actions -->
+                </div> <!-- end: actions -->   
+                <!-- Shows and hides item no. -->
+                <span class="showItemNo">    
+                    <?php echo "#".$_product->getSku(); ?>
+                </span>
             </li>
         <?php endforeach; ?>    
     </ul>

@@ -233,6 +233,7 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 
 a.button.button.btn-cart, button.button.btn-cart {
 background-color: #da7752;
+position: relative;
 }
 
 
@@ -1095,7 +1096,6 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 .mini-compare .mini-compare-content .actions button { float:left; }
 
 
-
 /* Sidebar %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
@@ -1659,9 +1659,27 @@ h3.product-name {
 	span.showItemNo {
 		color: #979797;
 		display: none;
+		position: absolute;
+		margin-left: 215px;
+		margin-top: -12px;
 	}
 	li.item:hover span.showItemNo {
 		display: block;
+	}
+	.play-image{
+	position: relative;
+	}
+	.play-button {
+	color: #8fb3d1;
+	margin-top: -40px;
+	position: absolute;
+	margin-left: -120px;
+	}
+	.products-grid .link-wishlist {
+		display: none;
+	}
+	.products-grid .link-compare {
+	    display: none;
 	}
 	/* Align to the center
 	-------------------------------------------------------------- */

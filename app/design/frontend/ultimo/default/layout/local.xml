@@ -39,7 +39,6 @@
 			<action method="addItem"><type>skin_css</type><name>css/infortis/_shared/tabs.css</name><params/></action>
 			<action method="addItem"><type>skin_css</type><name>css/infortis/_shared/icons.css</name><params/></action>
 			<action method="addItem"><type>skin_css</type><name>css/infortis/_shared/icons-font.css</name><params/></action>
-
 			<!-- Deprecated: image sprites with icons -->
 			<action method="addItem"><type>skin_css</type><name>css/icons-theme.css</name><params/></action>
 			<action method="addItem"><type>skin_css</type><name>css/icons-social.css</name><params/></action>
