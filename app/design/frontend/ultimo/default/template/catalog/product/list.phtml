@@ -249,6 +249,11 @@
                             src="<?php echo $helpImg->getImg($_product, $imgWidth, $imgHeight, 'small_image'); ?>"
                             alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" />
                         <span class="play-button"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></span>
+                        <!-- HTML5 Audio player -->
+                         <span class="sample-player">    
+                            <?php echo $_product->getAudioSample(); ?>
+                        </span>
+
                         <?php if ($theme->getCfg('category/alt_image')): ?>
                             <?php echo $theme->getAltImgHtml($_product, $imgWidth, $imgHeight); ?>   
                         <?php endif; ?>
