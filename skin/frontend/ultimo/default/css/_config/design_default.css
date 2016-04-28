@@ -625,7 +625,7 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 .nav-container 
 {
-	
+
 		}
 
 .nav
@@ -640,13 +640,13 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 
 	.sticky-header .nav-container, 	.sticky-header .nav-regular 	{
-		background-color: #ffffff;
+		background-color: #b6cc96;
 	}
 
 	.sticky-header .nav-regular .nav-item.level0 > a,
 	.sticky-header .nav-regular .nav-holder .dropdown-heading,
 	.sticky-header .nav-regular .nav-item--homeicon a, 	.sticky-header .nav-regular .nav-item--homeicon.active a 	{
-		color: #333333;
+		color: #ffffff;
 	}
 
 		.sticky-header .nav-regular .nav-item.level0.parent > a .caret,
@@ -671,7 +671,7 @@ li.level0 > a:hover > span > .pin-bottom:before,
 	
 		.nav-regular
 		{
-			background-color: #b2c081;
+			background-color: #b6cc96;
 		}
 		.nav-regular .nav-item.level0 > a,
 
@@ -707,7 +707,7 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 
 	
-				.nav-regular .nav-item.level0.active > a
+		.nav-regular .nav-item.level0.active > a
 		{
 			background-color: #698c9d;
 			color: #ffffff;
@@ -738,7 +738,7 @@ li.level0 > a:hover > span > .pin-bottom:before,
 	
 				.nav-regular .nav-item.level0:hover > a
 		{
-			background-color: #b2c081;
+			background-color: #b6cc96;
 			color: #ffffff;
 		}
 
@@ -767,15 +767,15 @@ li.level0 > a:hover > span > .pin-bottom:before,
 
 
 	.nav-regular .nav-item.level0 > a {
-		line-height: 50px;
+		line-height: 38px;
 	}
 
 		.nav-regular .nav-holder > * {
-		line-height: 50px;
-		max-height: 50px; 	}
+		line-height: 38px;
+		max-height: 38px; 	}
 	.nav-regular .nav-holder .dropdown-heading {
-		line-height: 50px;
-		max-height: 50px;
+		line-height: 38px;
+		max-height: 38px;
 	}
 
 
