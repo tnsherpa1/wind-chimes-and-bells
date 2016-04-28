@@ -232,7 +232,7 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 }
 
 a.button.button.btn-cart, button.button.btn-cart {
-background-color: #da7752;
+background-color: #f39019;
 position: relative;
 }
 
@@ -1660,11 +1660,9 @@ h3.product-name {
 	----------------------------------------------------------------*/
 	span.showItemNo {
 		color: #979797;
-		display: none;
-		position: absolute;
-	}
-	li.item:hover span.showItemNo {
 		display: block;
+		float: left;
+		padding-left: 5px;
 	}
 	.play-image{
 	position: relative;
@@ -1675,6 +1673,10 @@ h3.product-name {
 	margin-top: -40px;
 	position: absolute;
 	margin-left: -120px;
+	}
+	.play-button .fa-pause {
+		font-size: 2.5em;
+		margin-top: 2px;
 	}
 	.products-grid .link-wishlist {
 		display: none;

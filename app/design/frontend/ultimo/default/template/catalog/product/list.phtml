@@ -241,7 +241,10 @@
     <ul class="products-grid category-products-grid itemgrid itemgrid-adaptive itemgrid-<?php echo $columnCount; ?>col<?php if($gridClasses) echo $gridClasses; ?>">
         <?php foreach ($_productCollection as $_product): ?>
             <li class="item">
-            
+             <!-- Shows and hides item no. -->
+            <span class="showItemNo">    
+                <?php echo "#".$_product->getSku(); ?>
+            </span>
                 <div class="product-image-wrapper" style="max-width:<?php echo $imgWidth; ?>px;">
                 
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" class="product-image">
@@ -335,7 +338,6 @@
                         <?php endif; ?>
 
                     <?php endif; ?>
-                    
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && !$gc['addtolinks_simple'])
                         {
@@ -343,10 +345,6 @@
                         }
                     ?>
                 </div> <!-- end: actions -->   
-                <!-- Shows and hides item no. -->
-                <span class="showItemNo">    
-                    <?php echo "Item# ".$_product->getSku(); ?>
-                </span>
             </li>
         <?php endforeach; ?>    
     </ul>
