@@ -143,6 +143,13 @@
 
 			<div class="product-name">
 				<h1 itemprop="name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+				<?php if ($sku = $_product->getSku()): ?>
+					<?php if ($theme->getCfg('product_page/sku')): ?>
+						<div class="sku">
+							<span class="label"><?php echo $this->__('Item No.'); ?>: </span>
+							<span class="value"><?php echo $sku; ?></span>
+						</div>
+					<?php endif; ?>
 			</div>
 			
 			<?php echo $this->getReviewsSummaryHtml($_product, false, true); //reviews ?>
@@ -155,13 +162,6 @@
 
 			<?php if (isset($p['primCol_1'])) echo $p['primCol_1']; ?>
 
-			<?php if ($sku = $_product->getSku()): ?>
-				<?php if ($theme->getCfg('product_page/sku')): ?>
-					<div class="sku">
-						<span class="label"><?php echo $this->__('SKU'); ?>: </span>
-						<span class="value"><?php echo $sku; ?></span>
-					</div>
-				<?php endif; ?>
 				<?php if ($useRichSnippets): ?><meta itemprop="productID" content="sku:<?php echo $sku; ?>" /><?php endif; ?>
 			<?php endif; ?>
 

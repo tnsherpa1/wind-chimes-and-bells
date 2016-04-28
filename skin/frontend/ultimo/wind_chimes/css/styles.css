@@ -2276,7 +2276,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .box-reviews .form-add .data-table td { text-align:center; line-height:1em; }
 .product-view .box-reviews .form-add .data-table td .radio { margin:0; }
 
-
+.product-view .sku {
+	margin-left: 0;
+}
 /* Send a Friend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
