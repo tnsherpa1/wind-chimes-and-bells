@@ -389,7 +389,7 @@ $_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStore
             <?php else: ?>
                 <p class="special-price">
                 <!-- Product View Page -->
-                <span class="price-label"><?php echo $_specialPriceStoreLabel ?></span>
+                <!-- <span class="price-label"> --><?php /*echo $_specialPriceStoreLabel*/ ?><!-- </span> -->
                 <span class="price" id="product-price-<?php echo $_id ?><?php echo $this->getIdSuffix() ?>">
                     <?php echo $_coreHelper->formatPrice($_finalPrice, false) ?>
                 </span>

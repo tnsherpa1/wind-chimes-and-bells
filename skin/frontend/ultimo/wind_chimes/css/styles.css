@@ -1889,7 +1889,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 
 /* Old price */
 .old-price { margin-left:45px; position: absolute; font-size: 1.2em; }
-.old-price .price {margin-left: 87px; font-size: 12px;}
+.old-price .price {margin-left: 75px; font-size: 12px;}
 
 /* Special price */
 .special-price {margin-left: 15px; font-size: 1.3em; margin-bottom: -5px}
