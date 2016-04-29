@@ -20,12 +20,13 @@
 
     <div class="mini-compare-heading dropdown-heading cover skip-link skip-compare" title="<?php echo $mainTitle; ?>">
         <span>
+         <?php if($count > 0): ?> 
             <span class="icon ic ic-compare"></span>
-            <?php if ($count > 0): ?>
-                <span class="count"><?php echo $count; ?></span>
-            <?php endif; ?>
+            <span class="count"><?php echo $count; ?></span>
             <span class="label"<?php if (!$theme->getCfg('header/compare_label')) echo ' style="display:none;"'; ?>><?php echo $this->__('Compare'); ?></span>
             <span class="caret">&nbsp;</span>
+         <?php endif ?>  
+
         </span>
     </div>
     <div id="header-compare" class="mini-compare-content dropdown-content left-hand block skip-content skip-content--style">

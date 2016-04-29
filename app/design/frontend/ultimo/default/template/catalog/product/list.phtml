@@ -160,7 +160,6 @@
                 <?php else: ?>
                     <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                 <?php endif; ?>
-
                 <?php
                 if ($lc['addtolinks_simple'])
                     echo $helpTemplate->getCategoryAddtoLinks($_product, $this->getAddToCompareUrl($_product), 'addto-gaps-right');
@@ -257,6 +256,7 @@
                     <span class="play-button">
                             <i id="audioControl" data-toggle="tooltip" title="play me!"class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
                     </span>
+                
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && $gc['addtolinks_simple'])
                         {
@@ -266,7 +266,6 @@
                                 echo $helpTemplate->getCategoryAddtoLinksIcons($_product, $this->getAddToCompareUrl($_product), 'addto-links-icons addto-onimage');
                         }
                     ?>
-                
                 </div> <!-- end: product-image-wrapper -->
 
                 <?php if ($gc['display_name'] != 0): ?>
@@ -333,6 +332,7 @@
                         <?php endif; ?>
 
                     <?php endif; ?>
+
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && !$gc['addtolinks_simple'])
                         {

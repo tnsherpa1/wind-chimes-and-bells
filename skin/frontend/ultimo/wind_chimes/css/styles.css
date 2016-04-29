@@ -1076,7 +1076,7 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 /* Mini-compare heading
 -------------------------------------------------------------- */
 .mini-compare .mini-compare-heading .ic {
-	font-size: 30px;
+	font-size: 22px;
 	color: #698c9d;
 	line-height: 1em;
 }
@@ -1683,7 +1683,7 @@ h3.product-name {
 		display: none;
 	}
 	.products-grid .link-compare {
-	    display: none;
+	    display: block;
 	}
 	/* Align to the center
 	-------------------------------------------------------------- */
