@@ -1598,7 +1598,7 @@ h3.product-name {
 .products-grid .product-name { margin:15px 0 10px; }
 .products-grid .product-image-wrapper { margin:0 auto; position:relative; border: solid 1px #d3d3d3; padding: 2px; }
 .products-grid .product-image { display:block; }
-.products-grid .price-box { margin: 22px 0 10px -15px; font-weight: bold; float: left; font-size:1em; }
+.products-grid .price-box { margin: 22px 0 10px 0; font-weight: bold; float: left; font-size:1em; }
 .products-grid .ratings { margin:10px 0; line-height:1.0833em; }
 /* If ratings wrapped, remove margin from ratings, leave maring in wrapper */
 /*.products-grid .ratings-wrapper { margin:10px 0; }
