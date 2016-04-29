@@ -1474,7 +1474,7 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 /* Category view %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-.category-title h1 {}
+.category-title h1 {color: rgba(75, 72, 72, 0.84);}
 .category-image { width:100%; overflow:hidden; margin:10px 0; text-align:center; }
 .category-image img {}
 /* Custom */
@@ -1496,7 +1496,7 @@ h3.product-name a,
 h4.product-name a,
 h5.product-name a,
 p.product-name a {
-	color: inherit;
+	color: #333;
 }
 
 
@@ -1598,7 +1598,7 @@ h3.product-name {
 .products-grid .product-name { margin:15px 0 10px; }
 .products-grid .product-image-wrapper { margin:0 auto; position:relative; border: solid 1px #d3d3d3; padding: 2px; }
 .products-grid .product-image { display:block; }
-.products-grid .price-box { margin:10px 0 10px; font-size:1em; }
+.products-grid .price-box { margin: 22px 0 10px -15px; font-weight: bold; float: left; font-size:1em; }
 .products-grid .ratings { margin:10px 0; line-height:1.0833em; }
 /* If ratings wrapped, remove margin from ratings, leave maring in wrapper */
 /*.products-grid .ratings-wrapper { margin:10px 0; }
@@ -1651,6 +1651,7 @@ h3.product-name {
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
+		float: left;
 	}
 	.products-grid.single-line-name .item:hover .product-name {
 		overflow: visible;
@@ -1662,7 +1663,7 @@ h3.product-name {
 		color: #979797;
 		display: block;
 		float: left;
-		padding-left: 5px;
+		margin-left: -89px;
 	}
 	.play-image{
 	position: relative;
@@ -1687,8 +1688,8 @@ h3.product-name {
 	/* Align to the center
 	-------------------------------------------------------------- */
 	.products-grid.centered .item { text-align: center; }
-	.products-grid.centered .item .ratings .rating-box,
-	.products-grid.centered .item .btn-cart { margin-left: 0; margin-right: 0; }
+	.products-grid.centered .item .ratings .rating-box {  }
+	.products-grid.centered .item .btn-cart { font-size: 15px; height: 33px; margin-top: 4px; line-height: 33px; width: 92px; margin-left: 0; margin-right: 5px; float: right; padding: 0 7px; }
 	.products-grid.centered .item .ratings .amount { margin-left: 3px; }
 	.products-grid.centered .item input.checkbox { float: none; }
 
@@ -1724,7 +1725,7 @@ h3.product-name {
 		padding-left:2%;
 		padding-right:2%;
 		z-index:10;
-		box-shadow:0 0 20px rgba(0,0,0,0.2);
+		box-shadow:0 0 20px rgba(0,0,0,0.3);
 		border-color:transparent;
 
 		transition:			box-shadow 400ms ease-out;
@@ -1887,7 +1888,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 
 /* Old price */
 .old-price { margin-left:45px; position: absolute; font-size: 1.2em; }
-.old-price .price { text-decoration:line-through; }
+.old-price .price {margin-left: 87px; font-size: 12px}
 
 /* Special price */
 .special-price {margin-left: 15px; font-size: 1.3em; margin-bottom: -5px}
