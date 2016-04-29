@@ -232,10 +232,11 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 }
 
 a.button.button.btn-cart, button.button.btn-cart {
-background-color: #f39019;
+background-color: rgb(238, 136, 51);
 position: relative;
+border: solid 1px #C46D03;
+border-radius: 6px;
 }
-
 
 /* Form
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1651,8 +1652,8 @@ h3.product-name {
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		float: none;
-	}
+		width: 100%;
+		}
 	.products-grid.single-line-name .item:hover .product-name {
 		overflow: visible;
 		white-space: normal;
