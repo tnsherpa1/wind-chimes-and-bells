@@ -106,7 +106,7 @@ class Infortis_Ultimo_Helper_Template extends Mage_Core_Helper_Abstract
 			<li><a class="link-compare"
 				href="' . $_compareUrl . '" 
 				title="' . $this->__('Add to Compare') . '">
-					<span class="2 icon ib ic ic-compare"></span>
+					<span><i class="fa fa-square-o" aria-hidden="true"></i>&nbspCompare</span>
 			</a></li>';
 		}
 		

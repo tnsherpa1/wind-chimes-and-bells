@@ -256,18 +256,18 @@
                     <span class="play-button">
                             <i id="audioControl" data-toggle="tooltip" title="play me!"class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
                     </span>
-                
+                </div> <!-- end: product-image-wrapper -->
+                <div>
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && $gc['addtolinks_simple'])
                         {
-                            if ($gc['display_addtolinks'] == 1) //Display on hover
+                        echo $helpTemplate->getCategoryAddtoLinksIcons($_product, $this->getAddToCompareUrl($_product));
+                            /*if ($gc['display_addtolinks'] == 1) //Display on hover
                                 echo $helpTemplate->getCategoryAddtoLinksIcons($_product, $this->getAddToCompareUrl($_product), 'addto-links-icons addto-onimage display-onhover');
-                            else //Always display
-                                echo $helpTemplate->getCategoryAddtoLinksIcons($_product, $this->getAddToCompareUrl($_product), 'addto-links-icons addto-onimage');
+                            else *///Always display
                         }
                     ?>
-                </div> <!-- end: product-image-wrapper -->
-
+                </div>
                 <?php if ($gc['display_name'] != 0): ?>
                     <h2 class="product-name<?php echo $productNameClasses; ?>"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
                 <?php endif; ?>
