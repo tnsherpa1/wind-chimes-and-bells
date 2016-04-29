@@ -1599,7 +1599,7 @@ h3.product-name {
 .products-grid .product-name { margin:15px 0 10px; }
 .products-grid .product-image-wrapper { margin:0 auto; position:relative; border: solid 1px #d3d3d3; padding: 2px; }
 .products-grid .product-image { display:block; }
-.products-grid .price-box { margin: 22px 0 10px 0; font-weight: bold; float: left; font-size:1em; }
+.products-grid .price-box { margin: 22px 0 10px 15px; font-weight: bold; float: left; font-size:1em; }
 .products-grid .ratings { margin:10px 0; line-height:1.0833em; }
 /* If ratings wrapped, remove margin from ratings, leave maring in wrapper */
 /*.products-grid .ratings-wrapper { margin:10px 0; }
@@ -1660,11 +1660,10 @@ h3.product-name {
 	}
 	/* Show and Hide Item No. in Product View
 	----------------------------------------------------------------*/
-	span.showItemNo {
+	div.showItemNo {
 		color: #979797;
-		display: block;
 		float: left;
-		margin-left: -89px;
+		margin-left: -65px;
 	}
 	.play-image{
 	position: relative;
@@ -1884,15 +1883,15 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .old-price .price-label { display:none; }
 
 /* Regular price */
-.regular-price {margin-left: 55px;}
+.regular-price {margin-left: 30px;}
 .regular-price .price {}
 
 /* Old price */
-.old-price { margin-left:45px; position: absolute; font-size: 1.2em; }
+.old-price { margin-left:7px; position: absolute; font-size: 1.2em; }
 .old-price .price {margin-left: 75px; font-size: 12px;}
 
 /* Special price */
-.special-price {margin-left: 15px; font-size: 1.3em; margin-bottom: -5px}
+.special-price {margin-left: 0; font-size: 1.3em; margin-bottom: -5px}
 
 /* Minimal price (as low as) */
 .minimal-price { margin:0 0 5px; }
