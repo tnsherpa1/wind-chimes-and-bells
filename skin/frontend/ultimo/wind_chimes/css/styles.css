@@ -3077,8 +3077,14 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 	padding:0;
 	text-align:left;
 }
-.footer .item-left { float:left; margin-right:20px; }
+.footer .item-left { float:left; margin-right:20px; color: white;}
 .footer .item-right { float:right; margin-left:20px; }
+.footer .item-right .links>li { line-height: 25px; }
+.footer .item-left .links>li { line-height: 25px; }
+div.section.clearer.links-wrapper-separators {
+	background-color: #b6cc96;
+	height: 20px;
+}
 
 /* Footer elements */
 .footer .heading,
