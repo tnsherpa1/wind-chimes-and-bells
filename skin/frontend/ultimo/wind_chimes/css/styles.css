@@ -1679,10 +1679,7 @@ h3.product-name {
 	position: absolute;
 	margin-left: -120px;
 	}
-	.play-button .fa-pause {
-		font-size: 2.5em;
-		margin-top: 2px;
-	}
+
 	.products-grid .link-wishlist {
 		display: none;
 	}

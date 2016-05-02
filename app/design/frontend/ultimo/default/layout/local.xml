@@ -63,7 +63,7 @@
 			<!-- Custom CSS (has to be enabled in admin) -->
 			<action method="addCss"
 				ifconfig="ultimo/customization/custom_css"><stylesheet>css/custom.css</stylesheet></action>
-			
+			<!-- Adding FONT AWESOME Css --><action method="addCss"><stylesheet>font-awesome/css/font-awesome.min.css</stylesheet></action>
 			<!-- Google Fonts -->
 			<action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Lato</href></action>
 

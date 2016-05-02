@@ -5,13 +5,13 @@ $j(document).ready(function() {
 	$j('#audioControl').click(function() {
 		var audioSample = document.getElementById('ample');
 		if (audioSample.paused) {
-			$j("#audioControl").removeClass('fa-play-circle');
-			$j("#audioControl").addClass('fa-pause');
+			$j("#audioControl").removeClass('fa-play-circle-o');
+			$j("#audioControl").addClass('fa-pause-circle-o');
 			audioSample.play();
 		} 
 		else {
-			$j("#audioControl").removeClass('fa-pause');
-			$j("#audioControl").addClass('fa-play-circle');
+			$j("#audioControl").removeClass('fa-pause-circle-o');
+			$j("#audioControl").addClass('fa-play-circle-o');
 			audioSample.pause();
 		}
 	});
