@@ -64,6 +64,9 @@
 			<action method="addCss"
 				ifconfig="ultimo/customization/custom_css"><stylesheet>css/custom.css</stylesheet></action>
 			
+			<!-- Google Fonts -->
+			<action method="addLinkRel"><rel>stylesheet</rel><href>//fonts.googleapis.com/css?family=Lato</href></action>
+
 			<!-- CSS for IE -->
 			<action method="addCssIe"><css>css/styles-ie.css</css></action>
 			<action method="addItem"><type>skin_css</type><name>css/styles-ie7.css</name><params/><if>lte IE 7</if></action>

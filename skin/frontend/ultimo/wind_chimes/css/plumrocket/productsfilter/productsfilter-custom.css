@@ -1,0 +1,29 @@
+/* 
+*	Name of design: Products Filter for Magento
+*	Designer: Plumrocket Inc
+*	Copyright status: All rights reserved
+*	Website: www.plumrocket.com
+*/      
+
+
+/*Filter Custom*/
+.product-filter .dropdowner .list {
+	float:left; 
+	padding:0 0 0 18px;
+	margin-bottom:5px; 
+	cursor:pointer;
+	line-height: normal; 
+	width: 100%; 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	position: relative; 
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	font-family: 'Lato', sans-serif;;
+}
+
+.product-filter .dropdowner .list span {
+	font-family: 'Lato', sans-serif;
+}
