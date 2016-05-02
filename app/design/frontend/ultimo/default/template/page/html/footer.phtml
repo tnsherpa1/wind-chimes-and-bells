@@ -28,9 +28,6 @@
 	$theme = $this->helper('ultimo');
 ?>
 <div class="footer-container">
-<div class="footer-container2">
-<div class="footer-container3">
-
 	<?php
 		$b = array();
 		if ($theme->getCfg('magento_blocks/footer_links') && $tmp = $this->getChildHtml('footer_links'))
@@ -49,10 +46,7 @@
 
 	<?php if (!empty($b['top'])): ?>
 
-	<div class="footer-top-container section-container">
-		<div class="footer-top footer container">
-			<div class="inner-container">
-			
+	<div class="footer-top-container section-container">			
 				<div class="section clearer links-wrapper-separators">
 				
 					<?php //Default Magento footer links (page.xml) ?>
@@ -71,9 +65,6 @@
 					<?php endif; ?>
 					
 				</div> <!-- end: footer-top section -->
-				
-			</div> <!-- end: inner-container -->
-		</div> <!-- end: footer-top -->
 	</div>
 
 	<?php endif; ?>
@@ -101,9 +92,6 @@
 	?>
 	
 	<?php if (!empty($b['primary']) || !empty($b['primary_bottom']) || !empty($b['primary_top'])): ?>
-	
-	<div class="footer-primary-container section-container<?php //if($classString['primary-container']) echo " " . $classString['primary-container']; ?>">
-		<div class="footer-primary footer container">
 			<div class="inner-container">
 
 				<?php if (!empty($b['primary_top'])): ?>
@@ -122,34 +110,11 @@
 				
 				<?php if (!empty($b['primary_bottom'])): ?>
 				<div class="footer-primary-bottom grid12-12">
-					<div class="<?php if(!empty($b['primary'])) echo 'footer-primary-bottom-spacing '; ?>clearer">
 					
-						<?php if (!empty($b['primary_bottom']['left'])): ?>
-							<div class="item item-left clearer block_footer_primary_bottom_left">
-								<?php echo $b['primary_bottom']['left']; ?>
-							</div>
-						<?php endif; ?>
-						
-						<?php if (!empty($b['primary_bottom']['right'])): ?>
-							<div class="item item-right clearer block_footer_primary_bottom_right">
-								<?php echo $b['primary_bottom']['right']; ?>
-							</div>
-						<?php endif; ?>
-						
-						<?php if (!empty($b['primary_bottom']['newsletter'])): ?>
-						<div class="item item-right newsletter-wrapper clearer">
-							<?php echo $b['primary_bottom']['newsletter']; ?>
-						</div>
-						<?php endif; ?>
-						
-						
-					</div> 
 				</div> <!-- end: footer-primary-bottom -->
 				<?php endif; ?>
 			
 			</div> <!-- end: inner-container -->
-		</div> <!-- end: footer-primary -->
-	</div>
 	
 	<?php endif; ?>
 
@@ -195,15 +160,29 @@
 	<div class="footer-bottom-container section-container">
 		<div class="footer-bottom footer container">
 			<div class="inner-container">
-
-				<div class="clearer">
-				
-					<?php if (!empty($b['bottom']['copyright'])): ?>
-						<div>
-							<div class="footer-copyright"><?php echo $b['bottom']['copyright']; ?></div>
-						</div>
-					<?php endif; ?>
+				<!-- NEWSLETTER -->
+				<div class="<?php if(!empty($b['primary'])) echo 'footer-primary-bottom-spacing '; ?>clearer">
 					
+						<?php if (!empty($b['primary_bottom']['left'])): ?>
+							<div class="item item-left clearer block_footer_primary_bottom_left">
+								<?php echo $b['primary_bottom']['left']; ?>
+							</div>
+						<?php endif; ?>
+						
+						<?php if (!empty($b['primary_bottom']['right'])): ?>
+							<div class="item item-right clearer block_footer_primary_bottom_right">
+								<?php echo $b['primary_bottom']['right']; ?>
+							</div>
+						<?php endif; ?>
+						
+						<?php if (!empty($b['primary_bottom']['newsletter'])): ?>
+						<div class="item item-right newsletter-wrapper clearer">
+							<?php echo $b['primary_bottom']['newsletter']; ?>
+						</div>
+						<?php endif; ?>
+					</div> 
+				<!-- NEWSLETTER ENDS -->
+				<div class="clearer">
 					<?php if (!empty($b['bottom']['block_footer_payment'])): ?>
 						<div class="item item-right block_footer_payment"><?php echo $b['bottom']['block_footer_payment']; ?></div>
 					<?php endif; ?>
@@ -211,9 +190,11 @@
 					<?php if (!empty($b['bottom']['store_switcher'])): ?>
 						<div class="item item-right"><?php echo $b['bottom']['store_switcher']; ?></div>
 					<?php endif; ?>
-
 				</div> <!-- end: footer-bottom section -->
-
+				<!-- Copyright Footer -->
+					<?php if (!empty($b['bottom']['copyright'])): ?>
+							<div class="footer-copyright"><?php echo $b['bottom']['copyright']; ?></div>
+					<?php endif; ?>
 			</div> <!-- end: inner-container -->
 		</div> <!-- end: footer-bottom -->
 	</div>
@@ -222,7 +203,5 @@
 	
 	<a id="scroll-to-top" class="ic ic-up" href="#top"></a>
 
-</div> <!-- end: footer-container3 -->
-</div> <!-- end: footer-container2 -->
 </div> <!-- end: footer-container -->
 

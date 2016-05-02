@@ -21,6 +21,9 @@ h3            { font-size:1.6666em;	line-height:1.2em;		/*20px, 24px*/ }
 h4            { font-size:1.3333em;	line-height:1.25em;		/*16px, 20px*/ }
 h5            { font-size:1.1666em;	line-height:1.1428em;	/*14px, 16px*/ }
 h6            { font-size:1em;		line-height:1.1666em;	/*12px, 14px*/ }
+.links>li>a {
+	text-transform: uppercase;
+}
 
 /* Forms */
 form          { display:inline; }
@@ -3079,11 +3082,13 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 }
 .footer .item-left { float:left; margin-right:20px; color: white;}
 .footer .item-right { float:right; margin-left:20px; }
-.footer .item-right .links>li { line-height: 25px; }
-.footer .item-left .links>li { line-height: 25px; }
+.footer .item-right .links>li { line-height: 35px; }
+.footer .item-left .links>li { line-height: 35px; }
+.footer-container .links>li>a { color: white; text-transform: uppercase; font-size: 1.2em; }
 div.section.clearer.links-wrapper-separators {
 	background-color: #b6cc96;
-	height: 20px;
+	height: 36px;
+	padding: 0 45px;
 }
 
 /* Footer elements */
@@ -3119,7 +3124,10 @@ div.section.clearer.links-wrapper-separators {
 	margin-top:10px;
 }
 
-
+#bbb {
+	padding-bottom: 5px;
+	margin-left: 285px;
+}
 /* Footer secondary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -3181,8 +3189,8 @@ div.section.clearer.links-wrapper-separators {
 	line-height:50px;
 	text-align:center;
 	font-size:32px;
-	bottom:56px;
-	right:30px;
+	bottom:137px;
+	right:0;
 	z-index:9999;
 	border-radius:50%;
 	background-image:none !important; /* To hide possible image bg from outdated custom CSS styles */
@@ -3606,5 +3614,8 @@ font-size:2.5em;
 }
 
 .footer-copyright {
+float: left;
+margin-top: -24px;
+width: 357px;
 font-size:1.1em;
 }
