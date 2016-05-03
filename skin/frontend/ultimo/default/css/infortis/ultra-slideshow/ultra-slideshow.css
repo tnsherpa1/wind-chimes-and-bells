@@ -14,10 +14,30 @@
 
 /*Four Features Box Home Page*/
 .four-features {
+	position: relative;
 	float: right;
-	background-color: grey;
 	height: 400px;
 	width: 400px;
+}
+.four-features tr>td {
+	border: solid 1px gray;
+}
+div.home-feature-wrapper {
+	margin: 2px;
+	background-color: gray;
+	height: 30px;
+}
+.home-feature-wrapper .home-feature {
+	margin: 0;
+	padding-top: 7px;
+	padding-right: 13px;
+	padding-left: 5px;
+	position: absolute;
+	color: white;
+	height: 30px;
+	width: 200px;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
 }
 
 /* Slideshow
