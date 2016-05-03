@@ -15,7 +15,7 @@
 /* Level 1 only
 -------------------------------------------------------------- */
 .nav-regular li.level0 { float: left; }
-.nav-regular li.level0 > a { padding: 0 12px; } /*TODO:holders*/
+.nav-regular li.level0 > a { padding: 0 25px; } /*TODO:holders*/
 .nav-regular li.level0 > a > span { display: inline-block; white-space: nowrap; }
 
 /* Top-level item on hover: pull up the link above the dropdown */
