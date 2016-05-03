@@ -1743,7 +1743,9 @@ h3.product-name {
 .nav-regular.centered li.level0 {
 	height: 39px;
 }
-
+.nav-regular li.level0 > a {
+	padding: 0 30px;
+}
 /* Grid: override grid elements to change size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */

@@ -14,8 +14,10 @@
 
 /*Four Features Box Home Page*/
 .four-features {
+	margin-left: -269px;
 	position: relative;
 	float: right;
+	max-width: 400px;
 	height: 400px;
 	width: 400px;
 }
@@ -26,6 +28,7 @@ div.home-feature-wrapper {
 	height: 30px;
 }
 .home-feature-wrapper .home-feature {
+
 	margin: 1px 0 0 0; 
 	text-align: center;
 	position: absolute;
