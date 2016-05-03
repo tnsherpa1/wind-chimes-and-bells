@@ -26,15 +26,15 @@ div.home-feature-wrapper {
 	height: 30px;
 }
 .home-feature-wrapper .home-feature {
-	border: solid 3px white;
+	margin: 1px 0 0 0; 
+	text-align: center;
 	position: absolute;
 	color: white;
 	height: 30px;
-	width: 190px;
+	line-height: 30px;
+	width: 195px;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
-	background-color: gray;
-	z-index: 999;
 }
 
 /* Slideshow
