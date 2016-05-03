@@ -27,7 +27,7 @@
 .owl-carousel{
 	display: none;
 	position: relative;
-	width: 65%;
+	width: 100%;
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
@@ -246,7 +246,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 /* Preloading images */
-.owl-item.loading {
+.owl-.loading {
   min-height: 60px;
   background: url(../../../images/infortis/_shared/ajax-loader.gif) no-repeat center center;
 }

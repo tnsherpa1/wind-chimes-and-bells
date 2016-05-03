@@ -1348,6 +1348,8 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 }
 .block-related:hover .block-subtitle { display:block; padding:8px; background-color:#fff; }
 
+div.item.slide a>img { height: 400px; }
+
 /* Block: Related. Single product slider
 -------------------------------------------------------------- */
 .block-related-slider input.checkbox { float:left; margin:7px 5px 0 0; }

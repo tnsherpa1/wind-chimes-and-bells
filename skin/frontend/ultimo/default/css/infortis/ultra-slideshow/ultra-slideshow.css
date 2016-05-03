@@ -7,9 +7,18 @@
 /* Slideshow wrapper
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.the-slideshow-wrapper {}
+.the-slideshow-wrapper { width: 65%; height: 400px; float: left; }
+
+
 .the-slideshow-wrapper:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
 
+/*Four Features Box Home Page*/
+.four-features {
+	float: right;
+	background-color: grey;
+	height: 400px;
+	width: 400px;
+}
 
 /* Slideshow
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
