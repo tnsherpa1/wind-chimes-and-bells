@@ -2285,6 +2285,12 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 
 .product-view .sku {
 	margin-left: 0;
+	float: right;
+}
+.product-view .sku .label {
+	color: #333;
+	font-size: 16px;
+	margin-right: -10px;
 }
 /* Send a Friend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
