@@ -79,6 +79,22 @@
 			
 			<block type="core/template" name="head.theme.css" template="page/html/head_theme_css.phtml" before="-" />
 			
+			<!-- Removing the styles.css declared in the base theme -->
+			<action method="removeItem">
+			  <type>skin_css</type>
+			  <name>css/styles.css</name>
+			</action>
+			<!-- Adding Bootstrap Css -->
+			<action method="addItem">
+			  <type>skin_css</type>
+			  <stylesheet>bootstrap/css/bootstrap.min.css</stylesheet>
+			</action>
+			<!-- Adding the styles.css again -->
+			<action method="addItem">
+			  <type>skin_css</type>
+			  <stylesheet>css/styles.css</stylesheet>
+			</action>
+			
 		</reference>
 		
 		
