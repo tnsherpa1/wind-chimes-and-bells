@@ -2114,10 +2114,11 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .product-options-bottom .price-box .regular-price .price,
 .product-view .price-as-configured .price,
 .map-popup-price .regular-price .price,
-.product-view .price-box.map-info .old-price .price { font-size:1.6666em; /*20px*/ }
+.product-view .price-box.map-info .old-price .price { font-size:2.4444em; /*20px*/ }
 
 /* Old price */
 .product-view .product-shop .price-box .old-price .price-label { white-space:nowrap; display:none; }
+.view-price	{ font-size: 1.5555em; margin-top: 10px; }
 
 /* MSRP price (only in MSRP box) */
 .map-popup-msrp .price { display:block; /* Move price below the label */ }
@@ -2129,6 +2130,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .price-box .special-price .price-label { white-space:normal; }
 .product-view .price-box .special-price .price-including-tax,
 .product-view .price-box .special-price .price-excluding-tax { padding:0 0 0 15px; }
+.product-view .price-box .special-price .price {
+	color: #f39019 !important;
+}
 
 /* Price box inside "Add-to-cart" box or inside product options box */
 .product-view .add-to-box .price-box,
@@ -2284,7 +2288,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 
 .product-view .sku {
 	margin-top: 9px;
-	margin-right: 90px;
+	margin-right: 192px;
 	float: right;
 }
 .product-view .sku .label {
