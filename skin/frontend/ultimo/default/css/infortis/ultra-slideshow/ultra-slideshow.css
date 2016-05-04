@@ -55,8 +55,8 @@ div.four-feature-img {
   background-size:100%;
 }
 #personalize {
-	background: url('/windchimes/media/catalog/product/p/e/personalized.jpeg') no-repeat; 
-  background-size:100%;
+	background: url('/windchimes/media/catalog/product/p/e/personalized.jpeg') 50% no-repeat; 
+  background-size:110%;
 }
 .home-feature-wrapper .home-feature {
 
