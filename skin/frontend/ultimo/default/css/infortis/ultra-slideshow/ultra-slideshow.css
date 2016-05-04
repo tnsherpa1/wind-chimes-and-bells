@@ -9,7 +9,6 @@
 */
 .the-slideshow-wrapper { width: 65%; height: 400px; float: left; }
 
-
 .the-slideshow-wrapper:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
 
 /*Four Features Box Home Page*/
@@ -27,7 +26,7 @@ div.four-feature-wrapper {
 	background-color: gray; 
 	z-index: 999; 
 	height: 30px; 
-	width: 195px; 
+	width: 200px; 
 	border-bottom-style:none; 
 	border-top-style:none;
 }
@@ -39,16 +38,18 @@ div.four-feature-img {
   position: absolute;
   display: inline;
   float: right; 
-  height:195px; 
-  width:195px; 
+  height:200px; 
+  width:200px; 
 }
 #corinthian {
 	background: url('/windchimes/media/catalog/product/1/2/12212t106_1.jpg') no-repeat; 
   background-size:100%;
+  border-bottom-style: none;
 }
 #specific-notes {
 	background: url('/windchimes/media/catalog/product/n/o/note.jpg') no-repeat; 
   background-size:100%;
+  border-bottom-style: none;
 }
 #under-fifty {
 	background: url('/windchimes/media/catalog/product/2/2/22950mars.jpg') no-repeat; 
@@ -59,14 +60,13 @@ div.four-feature-img {
   background-size:110%;
 }
 .home-feature-wrapper .home-feature {
-
 	margin:0; 
 	text-align: center;
 	position: absolute;
 	color: white;
 	height: 30px;
 	line-height: 30px;
-	width: 195px;
+	width: 200px;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
 }
