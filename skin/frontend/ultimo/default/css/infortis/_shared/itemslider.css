@@ -31,6 +31,7 @@
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
+  width: 770px;
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
