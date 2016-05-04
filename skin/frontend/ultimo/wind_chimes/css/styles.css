@@ -201,9 +201,8 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 	text-align:center;
 	background-color:#ddd;
 	color:#333;
-
 	line-height:45px;
-	padding:0 25px;
+	padding:0;
 	
 	transition:			color 300ms ease-in-out, background-color 300ms ease-in-out;
 	-moz-transition:	color 300ms ease-in-out, background-color 300ms ease-in-out;
@@ -230,12 +229,12 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 -------------------------------------------------------------- */
 .product-view .btn-cart,
 .btn-checkout {
-	line-height:55px;
-	font-size:1.1666em; /*14px*/
+	line-height:35px;
+	font-size:1.3666em; /*14px*/
 }
 
 a.button.button.btn-cart, button.button.btn-cart {
-background-color: rgb(238, 136, 51);
+background-color: #f39019;
 position: relative;
 border: solid 1px #C46D03;
 border-radius: 6px;
@@ -2011,7 +2010,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .add-to-cart .paypal-logo .paypal-or { clear:both; display:block; margin:5px 60px 5px 0; }
 
 	/* Button "Add to cart" on product page */
-	.product-view .btn-cart { min-width: 200px; }
+	.product-view .btn-cart { min-width: 110px; }
 
 /* Add class "left-side" to place the buttom at the left side
    of the quantity field
