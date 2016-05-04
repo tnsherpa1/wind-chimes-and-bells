@@ -21,11 +21,42 @@
 	height: 400px;
 	width: 400px;
 }
-/*.four-features tr>td {
-	border: solid 1px gray;
-}*/
+div.four-feature-wrapper {
+	border: solid 2px white;
+	position: absolute;
+	background-color: gray; 
+	z-index: 999; 
+	height: 30px; 
+	width: 195px; 
+	border-bottom-style:none; 
+	border-top-style:none;
+}
 div.home-feature-wrapper {
 	height: 30px;
+}
+div.four-feature-img {
+	border:solid 2px white;
+  position: absolute;
+  display: inline;
+  float: right; 
+  height:195px; 
+  width:195px; 
+}
+#corinthian {
+	background: url('/windchimes/media/catalog/product/1/2/12212t106_1.jpg') no-repeat; 
+  background-size:100%;
+}
+#specific-notes {
+	background: url('/windchimes/media/catalog/product/n/o/note.jpg') no-repeat; 
+  background-size:100%;
+}
+#under-fifty {
+	background: url('/windchimes/media/catalog/product/2/2/22950mars.jpg') no-repeat; 
+  background-size:100%;
+}
+#personalize {
+	background: url('/windchimes/media/catalog/product/p/e/personalized.jpeg') no-repeat; 
+  background-size:100%;
 }
 .home-feature-wrapper .home-feature {
 
