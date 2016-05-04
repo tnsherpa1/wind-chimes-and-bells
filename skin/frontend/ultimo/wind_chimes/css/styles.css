@@ -1789,7 +1789,7 @@ h3.product-name {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .ratings,
-.no-rating { line-height: 15px; margin: 15px 0 15px; }
+.no-rating { line-height: 15px; margin: -12px 0 15px 0; }
 .ratings strong { float:left; margin:1px 5px 0 0; } /* For backward compatibility */
 
 .rating-box { width:69px; height:13px; font-size:0; line-height:0; background:url(../images/img/rating.png) 0 0 repeat-x; text-indent:-999em; overflow:hidden; }
@@ -2284,7 +2284,8 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .box-reviews .form-add .data-table td .radio { margin:0; }
 
 .product-view .sku {
-	margin-left: 0;
+	margin-top: 9px;
+	margin-right: 90px;
 	float: right;
 }
 .product-view .sku .label {
