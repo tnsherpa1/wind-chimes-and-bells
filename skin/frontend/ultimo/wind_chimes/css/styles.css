@@ -2072,8 +2072,8 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .product-view .short-description { margin:15px 0; line-height:1.25em; /*15px*/ }
-.product-view .short-description ul { margin-top:5px; margin-bottom:5px; }
-
+.product-view .short-description ul { margin-top:5px; margin-bottom:5px; color:#6b6466; font-size:1.5555em; }
+.product-view .short-description ul>li {padding-bottom:7px;}
 /* Add-to links */
 .product-view .action-box { margin:20px 0; }
 
@@ -2288,7 +2288,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 
 .product-view .sku {
 	margin-top: 9px;
-	margin-right: 192px;
+	margin-right: 285px;
 	float: right;
 }
 .product-view .sku .label {
