@@ -2117,8 +2117,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .price-box.map-info .old-price .price { font-size:2.4444em; /*20px*/ }
 
 /* Old price */
-.product-view .product-shop .price-box .old-price .price-label { white-space:nowrap; display:none; }
-.view-price	{ font-size: 1.5555em; margin-top: 10px; }
+.product-view .product-shop .price-box .view-price {margin:7px 0 0 0; font-size:1.4444em; color:#6B6466;}
+.product-view .product-shop .price-box .view-price .price-label { white-space:nowrap; }
+.product-view .product-shop .price-box .view-price .price	{}
 
 /* MSRP price (only in MSRP box) */
 .map-popup-msrp .price { display:block; /* Move price below the label */ }
