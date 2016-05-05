@@ -2163,6 +2163,18 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 	margin-top:15px;
 }
 
+/*Play Button For Product View Page Sample Audio*/
+/*.product-play-pause-box {
+	height:30px;
+}*/
+#product-play-btn {
+	width: 90px;
+	height: 30px;
+	line-height:30px;
+	padding: 0;
+	font-style: italic;
+}
+
 /* Background color for main containers */
 /*.product-view .product-type-data,
 .container1-wrapper,

@@ -176,7 +176,9 @@
 				<?php echo $this->getTierPriceHtml(); ?>
 				<?php echo $priceProperties; ?>
 			</div> <?php //end: offers ?>
-
+			<div class="product-play-pause-box">
+				<?php echo $this->getChildHtml('product_play_pause_button'); ?>
+			</div>
 			<?php if (!$this->hasOptions()): //add to cart when no options (e.g. simple products) ?>
 				<?php if($_product->isSaleable()): ?>
 					<div class="add-to-box">

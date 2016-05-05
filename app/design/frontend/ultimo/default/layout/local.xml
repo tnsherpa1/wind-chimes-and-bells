@@ -723,6 +723,9 @@
 			<block type="cms/block" name="block_product_replace_upsell">
 				<action method="setBlockId"><block_id>block_product_replace_upsell</block_id></action>
 			</block>
+			<block type="cms/block" name="product_play_pause_button">
+				<action method="setBlockId"><block_id>product_play_pause_button</block_id></action>
+			</block>
 
 			<!-- Example: how to add custom static block to the product page.
 				 Block needs to be loaded in product page template file with the following code:
