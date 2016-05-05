@@ -2,7 +2,8 @@ var $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 	/* Audio player on product grid layout */
-	$j('#audioControl').click(function() {
+	$j('.play-button').click(function() {
+		console.log("clicked")
 		var audioSample = document.getElementById('ample');
 		if (audioSample.paused) {
 			$j("#audioControl").removeClass('fa-play-circle-o');
@@ -15,5 +16,7 @@ $j(document).ready(function() {
 			audioSample.pause();
 		}
 	});
+
+
 });
 

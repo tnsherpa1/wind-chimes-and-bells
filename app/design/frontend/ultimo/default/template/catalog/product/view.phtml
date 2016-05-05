@@ -176,9 +176,16 @@
 				<?php echo $this->getTierPriceHtml(); ?>
 				<?php echo $priceProperties; ?>
 			</div> <?php //end: offers ?>
+
+			<!-- Audio Begins -->
+			<span class="audio-bar" style="display:none">    
+        <?php echo $_product->getAudioSample(); ?>
+      </span>
+			
 			<div class="product-play-pause-box">
 				<?php echo $this->getChildHtml('product_play_pause_button'); ?>
-			</div>
+			</div><!-- Audio Ends -->
+
 			<?php if (!$this->hasOptions()): //add to cart when no options (e.g. simple products) ?>
 				<?php if($_product->isSaleable()): ?>
 					<div class="add-to-box">

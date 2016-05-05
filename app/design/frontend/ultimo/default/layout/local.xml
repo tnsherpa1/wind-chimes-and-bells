@@ -24,6 +24,7 @@
 
 			<!-- Custom JS -->
 			<action method="addItem"><type>skin_js</type><name>../../ultimo/wind_chimes/js/script.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>../../ultimo/wind_chimes/js/audio.js</name></action>
 		<!-- CSS: -->
 			
 			<!-- CSS base -->
