@@ -2095,6 +2095,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Additional information table
 -------------------------------------------------------------- */
 .product-view .data-table th { font-weight:bold; }
+.product-view .data-table th .label {color: #333;}
 
 
 /* Prices - common for product view and MAP popup
