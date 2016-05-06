@@ -25,6 +25,11 @@ h6            { font-size:1em;		line-height:1.1666em;	/*12px, 14px*/ }
 	text-transform: uppercase;
 }
 
+/*Additional Tabs*/
+ul.tabs.clearer {
+	text-transform: uppercase;
+}
+
 /* Forms */
 form          { display:inline; }
 fieldset      { border:0; }
@@ -32,7 +37,7 @@ legend        { display:none; }
 
 /* Table */
 table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
-caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+caption,th,td { vertical-align:baseline; text-align:left; font-weight:normal; }
 
 /* Content */
 strong        { font-weight:bold; }
@@ -608,21 +613,21 @@ p.required,
 */
 .data-table { width:100%; }
 .data-table th,
-.data-table td { padding:10px; font-size: 1.4444em;}
+.data-table td { padding:10px; font-size: 1.2222em;}
 .data-table thead { background:none; border-bottom:1px solid #e5e5e5; }
 .data-table thead th { font-weight:bold; vertical-align:bottom; border-right: none; }
 .data-table thead th.wrap { white-space:normal; }
 
 .data-table tr.odd td,
-.data-table tr.odd th { border-right:1px solid #f5f5f5;}
+.data-table tr.odd th {border-left:1px solid #f5f5f5;}
 .data-table tr.odd td.last { border-right:none; }
 .data-table tr.odd {}
 .data-table tr.odd.last { border-bottom:#eee solid 1px; }
 
 .data-table tr.even td,
-.data-table tr.even th { border-right:1px solid #f5f5f5; }
+.data-table tr.even th { border-left:1px solid #f5f5f5; }
 .data-table tr.even td.last { border-right:none; }
-.data-table tr.even { background-color:#F0EFF3; }
+.data-table tr.even { background-color:#CBE4F0; }
 
 .data-table tbody tr:hover {}
 .data-table tbody tr.product-shop-row:hover { background-color:#fff; } /*TODO:?*/
@@ -1801,7 +1806,7 @@ h3.product-name {
 	display: inline-block;
 	vertical-align: middle;
 }
-.ratings .rating-box { margin-right:6px; }
+.ratings .rating-box { margin-right:6px; margin-top: -12px; }
 .ratings .amount { white-space:nowrap; font-size:10px; text-transform:uppercase; }
 .ratings .rating-links .separator {
 	display: inline-block;
@@ -1889,7 +1894,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .old-price .price-label { display:none; }
 
 /* Regular price */
-.regular-price {margin-left: 30px;}
+.regular-price {}
 .regular-price .price {}
 
 /* Old price */
@@ -2057,7 +2062,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Product primary column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.product-view .product-shop { float:left; }
+.product-view .product-shop { float:left; margin-top:-25px;}
 .product-view .product-shop .product-name {	margin:0 0 1.6666em; /*20px*/ }
 .product-view .product-shop .product-name h1 { margin:0; }
 .product-view .product-shop .ratings-table { margin:15px 0 5px; }
@@ -2073,7 +2078,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .product-view .short-description { margin:5px 0; line-height:1.6em; /*15px*/ }
-.product-view .short-description ul { margin-top:5px; margin-bottom:5px; color:#6b6466; font-size:1.2222em; }
+.product-view .short-description ul { margin-top:5px; margin-bottom:5px; color:#6b6466; }
 .product-view .short-description ul>li {padding-bottom:7px;}
 /* Add-to links */
 .product-view .action-box {margin:0;}
@@ -2096,12 +2101,12 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Additional information table
 -------------------------------------------------------------- */
 .product-view .data-table th { font-weight:bold; }
-.label {
+th.label {
     display: inline;
     padding: .2em .6em .3em;
-    font-size: 1.4444em;
+    font-size: 1.2222em;
     font-weight: 700;
-    line-height: 1;
+    line-height: 2;
     color: #333;
     text-align: center;
     white-space: nowrap;
@@ -2130,9 +2135,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .price-box.map-info .old-price .price { font-size:2.4444em; /*20px*/ }
 
 /* Old price */
-.product-view .product-shop .price-box .view-price {margin:7px 0 0 0; font-size:1.4444em; color:#6B6466;}
+.product-view .product-shop .price-box .view-price {margin:7px 0 0 0; font-size:1.4444em;}
 .product-view .product-shop .price-box .view-price .price-label { white-space:nowrap; }
-.product-view .product-shop .price-box .view-price .price	{}
+.product-view .product-shop .price-box .view-price .price	{color:#6B6466 !important;}
 
 /* MSRP price (only in MSRP box) */
 .map-popup-msrp .price { display:block; /* Move price below the label */ }
@@ -2219,7 +2224,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .product-options { position:relative;}
-.product-options dt { font-weight:normal; }
+.product-options dt { font-weight:normal; width:65px; position:relative;float:left;}
 .product-options dt label { display:inline-block; font-weight:bold; font-size: 1.5555em; }
 .product-options dt label.required em { float:right; margin-left:3px; }
 .product-options dd .qty-holder { display:block; padding:5px 0 0; }
@@ -2314,7 +2319,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .box-reviews .form-add .data-table td .radio { margin:0; }
 
 .product-view .sku {
-	margin-top: 9px;
+	margin-top: 5px;
 	margin-right: 285px;
 	float: right;
 }

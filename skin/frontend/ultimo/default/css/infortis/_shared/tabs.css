@@ -11,7 +11,7 @@
 /* Tabs
 -------------------------------------------------------------- */
 /* Total height of the tab bar should be the same as in block titles */
-.gen-tabs .tabs li { float:left; margin:0; }
+.gen-tabs .tabs li { float:left; margin:0; text-align: center; width:160px }
 .gen-tabs .tabs a {
 	display:block;
 	padding:0 10px;
