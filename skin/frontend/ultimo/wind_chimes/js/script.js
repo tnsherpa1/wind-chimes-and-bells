@@ -1,19 +1,21 @@
-var $j = jQuery.noConflict();
+var $k = jQuery.noConflict();
 
-$j(document).ready(function() {
+$k(document).ready(function() {
 	/* Audio player on product grid layout */
-	$j('.play-button').click(function() {
-		console.log("clicked")
-		var audioSample = document.getElementById('ample');
-		if (audioSample.paused) {
-			$j("#audioControl").removeClass('fa-play-circle-o');
-			$j("#audioControl").addClass('fa-pause-circle-o');
-			audioSample.play();
+	$k('#list-play-button').click(function() {
+		alert("you clicked me!")
+		var $audioSample = $k(".playAction").attr("id");
+		console.log($audioSample);
+		var $playAudioSample = document.getElementById($audioSample);
+		if ($playAudioSample.paused) {
+			$k("#audioControl").removeClass('fa-play-circle-o');
+			$k("#audioControl").addClass('fa-pause-circle-o');
+			$playAudioSample.play();
 		} 
 		else {
-			$j("#audioControl").removeClass('fa-pause-circle-o');
-			$j("#audioControl").addClass('fa-play-circle-o');
-			audioSample.pause();
+			$k("#audioControl").removeClass('fa-pause-circle-o');
+			$k("#audioControl").addClass('fa-play-circle-o');
+			$playAudioSample.pause();
 		}
 	});
 
