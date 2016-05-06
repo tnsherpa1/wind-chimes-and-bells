@@ -627,7 +627,7 @@ p.required,
 .data-table tr.even td,
 .data-table tr.even th { border-left:1px solid #f5f5f5; }
 .data-table tr.even td.last { border-right:none; }
-.data-table tr.even { background-color:#CBE4F0; }
+.data-table tr.even { background-color:#DFE7EB; }
 
 .data-table tbody tr:hover {}
 .data-table tbody tr.product-shop-row:hover { background-color:#fff; } /*TODO:?*/
@@ -740,7 +740,7 @@ tr.summary-details-excluded { font-style:italic; }
 .std p,
 .std address,
 .std blockquote { margin:0 0 1em; padding:0; }
-div.std {font-size: 1.4444em}
+div.std {font-size: 1.2222em}
 
 
 /* Lists
@@ -1509,6 +1509,9 @@ h5.product-name a,
 p.product-name a {
 	color: #333;
 }
+.item h2.product-name a {
+	float: left;
+}
 
 
 /* Common styles for view types: list and grid
@@ -1606,11 +1609,11 @@ h3.product-name {
 	padding-bottom:20px;
 	position:relative; /* For hover effect */
 }
-.products-grid .product-name { margin:15px 0 10px; }
+.products-grid .product-name {}
 .products-grid .product-image-wrapper { margin:0 auto; position:relative; border: solid 1px #d3d3d3; padding: 2px; }
 .products-grid .product-image { display:block; }
-.products-grid .price-box { margin: 22px 0 10px 15px; font-weight: bold; float: left; font-size:1em; }
-.products-grid .ratings { margin: -6px 0 0 0; line-height:1.0833em; float: right; }
+.products-grid .price-box { width:145px; font-weight: bold; float:right; font-size:1em; padding: 5px; }
+.products-grid .ratings { line-height:1.0833em; float: right; }
 /* If ratings wrapped, remove margin from ratings, leave maring in wrapper */
 /*.products-grid .ratings-wrapper { margin:10px 0; }
 .products-grid .ratings-wrapper .ratings { margin-top:0; margin-bottom:0; }*/
@@ -1674,7 +1677,7 @@ h3.product-name {
 		color: #979797;
 		float: left;
 		margin-left: 2px;
-		margin-top: -4px;
+		margin-top: 5px;
 	}
 	.play-image{
 	position: relative;
@@ -1695,7 +1698,7 @@ h3.product-name {
 	}
 	/* Align to the center
 	-------------------------------------------------------------- */
-	.products-grid.centered .item { text-align: center; }
+	.products-grid.centered .item { text-align: center;box-sizing:content-box; }
 	.products-grid.centered .item .ratings .rating-box {  }
 	.products-grid.centered .item .btn-cart { font-size: 15px; height: 33px; margin-top: 4px; line-height: 33px; width: 92px; margin-left: 0; margin-right: 5px; float: right; padding: 0 7px; }
 	.products-grid.centered .item .ratings .amount { margin-left: 3px; }
@@ -1745,6 +1748,9 @@ h3.product-name {
 /* Menu Bar Home Page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
+ul #nav .nav-regular {
+	margin: 0;
+}
 .nav-regular.centered li.level0 {
 	height: 39px;
 }
@@ -1794,7 +1800,7 @@ h3.product-name {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 .ratings,
-.no-rating { line-height: 15px; margin: -12px 0 15px 0; }
+.no-rating { line-height: 15px; }
 .ratings strong { float:left; margin:1px 5px 0 0; } /* For backward compatibility */
 
 .rating-box { width:69px; height:13px; font-size:0; line-height:0; background:url(../images/img/rating.png) 0 0 repeat-x; text-indent:-999em; overflow:hidden; }
@@ -1806,7 +1812,7 @@ h3.product-name {
 	display: inline-block;
 	vertical-align: middle;
 }
-.ratings .rating-box { margin-right:6px; margin-top: -12px; }
+.ratings .rating-box { margin-right:6px; }
 .ratings .amount { white-space:nowrap; font-size:10px; text-transform:uppercase; }
 .ratings .rating-links .separator {
 	display: inline-block;
@@ -2062,7 +2068,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Product primary column
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.product-view .product-shop { float:left; margin-top:-25px;}
+.product-view .product-shop { float:left;}
 .product-view .product-shop .product-name {	margin:0 0 1.6666em; /*20px*/ }
 .product-view .product-shop .product-name h1 { margin:0; }
 .product-view .product-shop .ratings-table { margin:15px 0 5px; }
@@ -2136,7 +2142,7 @@ th.label {
 
 /* Old price */
 .product-view .product-shop .price-box .view-price {margin:7px 0 0 0; font-size:1.4444em;}
-.product-view .product-shop .price-box .view-price .price-label { white-space:nowrap; }
+.product-view .product-shop .price-box .view-price .price-label { white-space:nowrap;color:#6B6466 !important; }
 .product-view .product-shop .price-box .view-price .price	{color:#6B6466 !important;}
 
 /* MSRP price (only in MSRP box) */
@@ -2219,6 +2225,7 @@ th.label {
 .product-view .short-description .std ul.disc li,
 .product-view .box-tabs .std ul.disc li { background-image:none; padding-left:0; }
 .gen-tabs--style1-small .tabs a { font-size: 18px; }
+.gen-tabs .tabs a.current {color: #ffffff;}
 
 /* Product options 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -256,6 +256,10 @@
                   <!--   <span id="list-play-button">
                         <i id="audioControl" class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>
                     </span> -->
+                       <!-- Shows and hides item no. -->
+                <div class="showItemNo">    
+                    <?php echo "#".$_product->getSku(); ?>
+                </div>
                 </div> <!-- end: product-image-wrapper -->
                 <div>
                     <?php //Add-to links
@@ -286,6 +290,11 @@
                     }
                 }
                 ?>
+                <?php if ($gc['display_price'] == 1): //Display on hover ?>
+                    <div class="display-onhover"><?php echo $this->getPriceHtml($_product, true); ?></div>
+                <?php elseif ($gc['display_price'] == 2): //Always display ?>
+                    <?php echo $this->getPriceHtml($_product, true); ?>
+                <?php endif; ?>
                 
                 <?php if ($_product->getRatingSummary()): ?>
                     <?php if ($gc['display_rating'] == 1): //Display on hover ?>
@@ -295,16 +304,6 @@
                     <?php endif; ?>
                 <?php endif; ?>
                 
-                <?php if ($gc['display_price'] == 1): //Display on hover ?>
-                    <div class="display-onhover"><?php echo $this->getPriceHtml($_product, true); ?></div>
-                <?php elseif ($gc['display_price'] == 2): //Always display ?>
-                    <?php echo $this->getPriceHtml($_product, true); ?>
-                <?php endif; ?>
-
-                 <!-- Shows and hides item no. -->
-                <div class="showItemNo">    
-                    <?php echo "#".$_product->getSku(); ?>
-                </div>
                 <?php
                     //If at least one element was set as "Display on hover" but no element was set as "Display":
                     //aggregate classes from those elements and apply them to the "actions" container.
@@ -318,20 +317,8 @@
                         $actionsClasses = '';
                     }
                 ?>
-
+                
                 <div class="actions clearer<?php echo $actionsClasses; ?>">
-
-                    <?php if ($gc['display_addtocart'] != 0): //Cart button ?>
-
-                        <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
-                            <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
-                        <?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
-                            <a title="<?php echo $this->__('View Details') ?>" class="button btn-cart" href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('View Details') ?></a>
-                        <?php else: ?>
-                            <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
-                        <?php endif; ?>
-
-                    <?php endif; ?>
 
                     <?php //Add-to links
                         if ($gc['display_addtolinks'] != 0 && !$gc['addtolinks_simple'])
