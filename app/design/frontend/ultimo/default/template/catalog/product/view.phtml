@@ -154,10 +154,6 @@
 			
 			<?php echo $this->getReviewsSummaryHtml($_product, false, true); //reviews ?>
 
-			<?php if ($shortDescription): ?>
-				<div class="short-description"><div class="std" itemprop="description"><?php echo $shortDescription; ?></div></div>
-			<?php endif;?>
-
 			<?php echo $this->getChildHtml('container_product_primary_1'); ?>
 
 			<?php if (isset($p['primCol_1'])) echo $p['primCol_1']; ?>
@@ -170,13 +166,6 @@
 			<?php if ($extrahint_html = $this->getChildHtml('extrahint')): //qty increments ?>
 				<div class="extrahint-wrapper"><?php echo $extrahint_html; ?></div>
 			<?php endif; ?>
-
-			<div <?php if ($useRichSnippets) echo $helperSnippets->getOfferItemscope(); ?>>
-				<div class="product-type-data<?php echo $productTypeClasses; ?>"><?php echo $this->getChildHtml('product_type_data'); ?></div>
-				<?php echo $this->getTierPriceHtml(); ?>
-				<?php echo $priceProperties; ?>
-			</div> <?php //end: offers ?>
-
 			<!-- Audio Begins -->
 			<span class="audio-bar" style="display:none">    
         <?php echo $_product->getAudioSample(); ?>
@@ -185,6 +174,14 @@
 			<div class="product-play-pause-box">
 				<?php echo $this->getChildHtml('product_play_pause_button'); ?>
 			</div><!-- Audio Ends -->
+			<div <?php if ($useRichSnippets) echo $helperSnippets->getOfferItemscope(); ?>>
+				
+				<div class="product-type-data<?php echo $productTypeClasses; ?>"><?php echo $this->getChildHtml('product_type_data'); ?>
+				</div>
+				<?php echo $this->getTierPriceHtml(); ?>
+				<?php echo $priceProperties; ?>
+			</div> <?php //end: offers ?>
+			
 
 			<?php if (!$this->hasOptions()): //add to cart when no options (e.g. simple products) ?>
 				<?php if($_product->isSaleable()): ?>
@@ -194,16 +191,22 @@
 				<?php endif; ?>
 				<?php echo $this->getChildHtml('extra_buttons') ?>
 			<?php endif; ?>
+			<!-- Free Shpiping Custom Block -->
+			<?php echo $this->getChildHtml('free_shipping_block'); ?>
 
 			<?php if ($_product->isSaleable() && $this->hasOptions()): ?>
 				<?php if ($container1_html = $this->getChildChildHtml('container1', '', true, true)): ?>
 					<div class="container1-wrapper"><?php echo $container1_html; ?></div>
 				<?php endif; ?>
 			<?php endif;?>
-			
+
+			<?php if ($shortDescription): ?>
+				<div class="short-description"><div class="std" itemprop="description"><?php echo $shortDescription; ?></div></div>
+			<?php endif;?>
+
 			<?php if ($addtoLinksHtml = $this->getChildHtml('addto')): //compare, wishlist, send to friend ?>
 				<div class="action-box clearer">
-					<?php echo $addtoLinksHtml; ?>
+					<?php /*echo $addtoLinksHtml;*/ ?>
 				</div>
 			<?php endif; ?>
 

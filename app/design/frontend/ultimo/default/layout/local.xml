@@ -728,6 +728,9 @@
 			<block type="cms/block" name="product_play_pause_button">
 				<action method="setBlockId"><block_id>product_play_pause_button</block_id></action>
 			</block>
+			<block type="cms/block" name="free_shipping_block">
+				<action method="setBlockId"><block_id>free_shipping_block</block_id></action>
+			</block>
 			<!-- Example: how to add custom statiqc block to the product page.
 				 Block needs to be loaded in product page template file with the following code:
 				 echo $this->getChildHtml('my_unique_block_identifier');

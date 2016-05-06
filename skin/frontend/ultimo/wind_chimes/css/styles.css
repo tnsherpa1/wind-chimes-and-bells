@@ -1896,7 +1896,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .old-price .price {margin-left: 75px; font-size: 12px;}
 
 /* Special price */
-.special-price {margin-left: 0; font-size: 1.3em; margin-bottom: -5px}
+.special-price {position:relative;float:left;margin-left: 0; font-size: 1.3em; margin-bottom: -5px}
 
 /* Minimal price (as low as) */
 .minimal-price { margin:0 0 5px; }
@@ -2016,9 +2016,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
    of the quantity field
 -------------------------------------------------------------- */
 .add-to-cart.left-side { float: none !important; /* In case floating is set in some other styles */ }
-.add-to-cart.left-side .button { float: left; }
+.add-to-cart.left-side .button {}
 .add-to-cart.left-side .qty-wrapper { line-height: 55px; /* The same height as button */ }
-.add-to-cart.left-side .qty-wrapper label { padding-left: 7px; }
+.add-to-cart.left-side .qty-wrapper label { padding-left: 7px; font-size:1.5555em; }
 
 
 
@@ -2071,11 +2071,11 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Product primary column's elements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.product-view .short-description { margin:15px 0; line-height:1.25em; /*15px*/ }
+.product-view .short-description { margin:5px 0; line-height:1.25em; /*15px*/ }
 .product-view .short-description ul { margin-top:5px; margin-bottom:5px; color:#6b6466; font-size:1.5555em; }
 .product-view .short-description ul>li {padding-bottom:7px;}
 /* Add-to links */
-.product-view .action-box { margin:20px 0; }
+.product-view .action-box {margin:0;}
 
 /* Add-to links in different places of the product page */
 .product-view .add-to-links li { margin-right: 10px; }
@@ -2152,7 +2152,6 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-view .add-to-box {
 	padding:0 0 15px;
 	margin:0 0 15px;
-	border-bottom:1px solid #e5e5e5;
 }
 .product-view .container2-wrapper {
 	margin-bottom:30px;
@@ -2168,9 +2167,11 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 	height:30px;
 }*/
 #product-play-btn {
+	position: absolute;
+	margin: -7px 0 0 131px;
 	width: 90px;
 	height: 30px;
-	line-height:30px;
+	line-height:26px;
 	padding: 0;
 	font-style: italic;
 }
@@ -2204,9 +2205,9 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* Product options 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.product-options { position:relative; margin-bottom:15px; }
+.product-options { position:relative;}
 .product-options dt { font-weight:normal; }
-.product-options dt label { display:inline-block; font-weight:bold; }
+.product-options dt label { display:inline-block; font-weight:bold; font-size: 1.5555em; }
 .product-options dt label.required em { float:right; margin-left:3px; }
 .product-options dd .qty-holder { display:block; padding:5px 0 0; }
 .product-options dd .qty-holder label { vertical-align:middle; }
@@ -2217,7 +2218,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-options dd input.datetime-picker { width:150px; }
 .product-options dd .time-picker { display:-moz-inline-box; display:inline-block; padding:2px 0; vertical-align:middle; }
 .product-options dd textarea { width:100%; /*width:92%;*/ height:8em; }
-.product-options dd select { width:100%; }
+.product-options dd select { width:50%; }
 .product-options dd .multiselect option { border-bottom:1px dotted #d9e5ee; padding:2px 4px; }
 .product-options ul.options-list { margin-right:5px; }
 .product-options ul.options-list li { line-height:1.5; padding:2px 0; }
@@ -2230,7 +2231,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 .product-options p.required { position:absolute; right:0; top:-15px; }
 
 /*bottom*/
-.product-options-bottom { margin-top:20px; }
+.product-options-bottom {margin-top:-18px;}
 .product-options-bottom .tier-prices { margin:0 0 10px; padding:0; border:0; background:0; }
 .product-options-bottom .tier-prices li { background:0; padding:2px 0; }
 .product-options-bottom .price-box .price-as-configured {}
@@ -2323,7 +2324,7 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 */
 /* Generic wrapper for lower part of the product page */
 .product-view .box-additional {
-	margin-top: 20px;
+	margin-top: 0;
 }
 
 /* Boxes for collateral data
@@ -2623,7 +2624,6 @@ a.availability-only { cursor:pointer; } /* It may also be a link to toggle more 
 /* For more styles see Multiple Addresses Checkout */
 .info-set .data-table .item-options { margin:5px 0 0; }
 /********** Common Checkout Styles > */
-
 
 /* Block - progress
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
