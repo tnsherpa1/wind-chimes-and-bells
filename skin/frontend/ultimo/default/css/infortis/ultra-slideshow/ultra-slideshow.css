@@ -7,7 +7,7 @@
 /* Slideshow wrapper
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-.the-slideshow-wrapper { width: 65%; height: 400px; float: left; }
+.the-slideshow-wrapper { width: 65%; float: left; }
 
 .the-slideshow-wrapper:after { display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
 
@@ -16,20 +16,20 @@
 	margin-left: -269px;
 	position: relative;
 	float: right;
-	left: -14px;
-	max-width: 400px;
-	height: 400px;
-	width: 400px;
+	max-width: 428px;
+	height: 428px;
+	width: 428px;
 }
 div.four-feature-wrapper {
 	border: solid 2px white;
 	position: absolute;
-	background-color: gray; 
-	z-index: 999; 
-	height: 30px; 
-	width: 200px; 
-	border-bottom-style:none; 
+	background-color: #333;
+	z-index: 999;
+	height: 30px;
+	width: 214px;
+	border-bottom-style:none;
 	border-top-style:none;
+	opacity:.6666;
 }
 div.home-feature-wrapper {
 	height: 30px;
@@ -38,36 +38,36 @@ div.four-feature-img {
 	border:solid 2px white;
   position: absolute;
   display: inline;
-  float: right; 
-  height:200px; 
-  width:200px; 
+  float: right;
+  height:214px;
+  width:214px;
 }
 #corinthian {
-	background: url('/windchimes/media/catalog/product/1/2/12212t106_1.jpg') no-repeat; 
+	background: url('/windchimes/media/catalog/product/f/e/feature-corinthian.jpg') no-repeat;
   background-size:100%;
   border-bottom-style: none;
 }
 #specific-notes {
-	background: url('/windchimes/media/catalog/product/n/o/note.jpg') no-repeat; 
+	background: url('/windchimes/media/catalog/product/f/e/feature-note.jpg') no-repeat;
   background-size:100%;
   border-bottom-style: none;
 }
 #under-fifty {
-	background: url('/windchimes/media/catalog/product/2/2/22950mars.jpg') no-repeat; 
+	background: url('/windchimes/media/catalog/product/f/e/feature-under50.jpg') no-repeat;
   background-size:100%;
 }
 #personalize {
-	background: url('/windchimes/media/catalog/product/p/e/personalized.jpeg') 50% no-repeat; 
+	background: url('/windchimes/media/catalog/product/f/e/feature-personalized.jpg') 50% no-repeat;
   background-size:110%;
 }
 .home-feature-wrapper .home-feature {
-	margin:0; 
+	margin:0;
 	text-align: center;
 	position: absolute;
 	color: white;
 	height: 30px;
 	line-height: 30px;
-	width: 200px;
+	width: 214px;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
 }

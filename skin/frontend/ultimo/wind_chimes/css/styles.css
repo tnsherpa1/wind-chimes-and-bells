@@ -1353,7 +1353,7 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 }
 .block-related:hover .block-subtitle { display:block; padding:8px; background-color:#fff; }
 
-div.item.slide a>img { height: 400px; }
+div.item.slide a>img { }
 
 /* Block: Related. Single product slider
 -------------------------------------------------------------- */
@@ -1758,6 +1758,9 @@ ul #nav .nav-regular {
 }
 .nav-regular li.level0 > a {
 	padding: 0 30px;
+}
+div.container {
+	padding-right:0;
 }
 /* Grid: override grid elements to change size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
