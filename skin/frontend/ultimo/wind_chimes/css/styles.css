@@ -542,7 +542,7 @@ p.required,
 .pager .pages strong,
 .pager .pages span { float:left; margin-right:5px; font-weight:normal; }
 .pager .pages ol { display:inline-block; vertical-align:middle; }
-.pager .pages li { float:left; margin:0 0 0 1px; display:block; text-align:center; }
+.pager .pages li { float:left; margin:0 0 0 1px; display:block; text-align:center;}
 .pager .pages li a { display:block; color:inherit; }
 .pager .pages a.previous,
 .pager .pages a.next { font-size:16px; }
@@ -597,6 +597,7 @@ p.required,
 		height:30px;
 		line-height:30px;
 		text-align:center;
+		border-radius: 0px;
 	}
 
 	/* Amount */
