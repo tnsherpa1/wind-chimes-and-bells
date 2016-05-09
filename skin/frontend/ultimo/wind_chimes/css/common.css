@@ -13,7 +13,7 @@
 .sidebar .block:first-child { margin-top:6px; } /* To align with page title */
 .cms-index-index .sidebar .block:first-child { margin-top:0; } /* Remove margin on home page */
 
- 
+
 /* Headings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -42,7 +42,7 @@
 	/* padding:13px 0 7px; */ /*TODO*/
 	padding-top:7px;
 	padding-bottom:7px;
-	border-bottom:1px solid #e5e5e5;
+	border-bottom:1px solid #c7cdd0;
 	font-weight:normal;
 	font-size:1.5em; /*18px*/
 	line-height:1.2222em; /*22px*/
@@ -114,7 +114,7 @@
 
 /* Misc */
 .buttons-set,
-.toolbar 
+.toolbar
 {
 	border-color:#e5e5e5;
 }

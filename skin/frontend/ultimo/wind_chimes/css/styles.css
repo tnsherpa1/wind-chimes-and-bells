@@ -1627,8 +1627,6 @@ h3.product-name {
 /*.products-grid .old-price,
 .products-grid .special-price { display: inline-block; }
 .products-grid .old-price + .special-price { margin-left: 4px; }*/
-
-
 /* Grid: additional styles
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -3666,6 +3664,7 @@ text-align: center;
 
 .section-title.padding-right {
 font-size:2.5em;
+color: #E47911;
 }
 
 .footer-copyright {

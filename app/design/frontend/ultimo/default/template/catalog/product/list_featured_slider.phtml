@@ -169,11 +169,11 @@
     <div id="<?php echo $sliderId; ?>" class="itemslider<?php if($sliderClasses) echo $sliderClasses; ?> products-grid<?php if($gridClasses) echo $gridClasses; ?>">
     <?php foreach ($_productCollection as $_product): ?>
         <div class="item">
-        
+
             <div class="product-image-wrapper" style="max-width:<?php echo $imgWidth; ?>px;">
-            
+
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" class="product-image">
-                    
+
                     <?php if ($lazy): ?>
                         <img class="lazyOwl" data-src="<?php echo $helpImg->getImg($_product, $imgWidth, $imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" />
                     <?php else: ?>
@@ -186,24 +186,8 @@
 
                     <?php echo $helpLabels->getLabels($_product); //Product labels ?>
                 </a>
-            
-                <?php //Add-to links
-                    if ($theme->getCfg('category_grid/display_addtolinks') != 0 
-                        && $theme->getCfg('category_grid/addtolinks_simple'))
-                    {
-                        if ($theme->getCfg('category_grid/display_addtolinks') == 1) //Display on hover
-                        {
-                            echo $helpTemplate->getCategoryAddtoLinksIcons(
-                            $_product, $this->getAddToCompareUrl($_product), 'addto-links-icons addto-onimage visible-onhover');
-                        }
-                        else //Always display
-                        {
-                            echo $helpTemplate->getCategoryAddtoLinksIcons(
-                            $_product, $this->getAddToCompareUrl($_product), 'addto-links-icons addto-onimage');
-                        }
-                    }
-                ?>
-                
+
+
             </div> <!-- end: product-image-wrapper -->
 
             <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
@@ -234,7 +218,7 @@
                 ?>
 
             </div>
-            
+
         </div>
     <?php endforeach; ?>
     </div> <!-- end: itemslider -->
@@ -242,7 +226,7 @@
 <script type="text/javascript">
 //<![CDATA[
     jQuery(function($) {
-        
+
         var owl = $('#<?php echo $sliderId; ?>');
         owl.owlCarousel({
 

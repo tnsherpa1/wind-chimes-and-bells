@@ -69,7 +69,7 @@
 	-moz-transition:	opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
 	-webkit-transition:	opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
 	-o-transition:		opacity 300ms ease-in-out, background-color 300ms ease-in-out, background-position 300ms ease-in-out;
-	
+
 	opacity:0;
 	filter:alpha(opacity=0);
 }
@@ -78,7 +78,7 @@
 .slider-arrows2 .owl-controls.clickable .owl-buttons div:hover { background-color:#000; }
 .slider-arrows2 .owl-controls			.owl-buttons .owl-prev			{ background-position:-2px 0; left:0; top:46%; }
 .slider-arrows2 .owl-controls.clickable .owl-buttons .owl-prev:hover	{ background-position:-2px -50px; }
-.slider-arrows2 .owl-controls			.owl-buttons .owl-next			{ background-position:-48px 0; right:0; top:46%; }
+.slider-arrows2 .owl-controls			.owl-buttons .owl-next			{ background-position:-48px 0; right:18px; top:46%; }
 .slider-arrows2 .owl-controls.clickable .owl-buttons .owl-next:hover	{ background-position:-48px -50px; }
 
 
@@ -194,5 +194,5 @@
 
 /* Over the slider */
 .pagination-pos-over-bottom-centered	.owl-pagination { text-align: center; margin-top: -35px; position: absolute; width: 100%; }
-.pagination-pos-over-bottom-right		.owl-pagination { position:absolute; bottom:3.5%; right:1.5%; }
+.pagination-pos-over-bottom-right		.owl-pagination { position:absolute; bottom:1.5%; right:2.5%; }
 .pagination-pos-over-bottom-left		.owl-pagination { position:absolute; bottom:3.5%; left:1.5%; }
