@@ -922,6 +922,7 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
 #search_mini_form { clear:both; display:block; margin-right:5px; }
+.btn-search {background-color:#698c9d;height:44px; width:91px; }
 
 /* Clear floats of ".form-search" element inside search form */
 .form-search:before,
@@ -937,9 +938,10 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 .form-search { position:relative; }
 .form-search label { float:left; margin:3px 4px 0 0; display:none; }
 .form-search .input-text {
+	position: relative;
 	border-radius: 7px;
-	float:right; /* Float in the same direction as position of button */
-	width:100%;
+	float:left; /* Float in the same direction as position of button */
+	width:75%;
 	display: block;
 	height:45px;
 	line-height:36px; /*IE8*/

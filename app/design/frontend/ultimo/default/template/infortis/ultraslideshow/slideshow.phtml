@@ -120,7 +120,7 @@
                         if ($h->getCfg('banners/hide') == false)
                             $hideBannersClass = '';
                     ?>
-                    <div class="the-slideshow-banners slideshow-banners <?php echo $bannersGridClass . ' ' . $hideBannersClass; ?>"><?php echo $banners; ?></div>
+                    <div class="the-slideshow-banners slideshow-banners<?php echo $bannersGridClass . ' ' . $hideBannersClass; ?>"><?php echo $banners; ?></div>
                 <?php endif; ?>
 
             </div> <!-- end: the-slideshow-wrapper -->
@@ -130,7 +130,7 @@
                 <td>
                 <div class="home-feature-wrapper">
                   <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">    
+                <div class="four-feature-wrapper">
                     <h4 class="home-feature">Personalize Your Chime</h4>
                 </div>
                 <div id="personalize" class="four-feature-img">
@@ -154,7 +154,7 @@
                 <td>
                 <div class="home-feature-wrapper">
                <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">    
+                <div class="four-feature-wrapper">
                     <h4 class="home-feature">Specific Notes</h4>
                 </div>
                 <div id="specific-notes" class="four-feature-img">
@@ -165,7 +165,7 @@
                 <td>
                 <div class="home-feature-wrapper">
                 <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">    
+                <div class="four-feature-wrapper">
                     <h4 class="home-feature">Corinthian Chimes</h4>
                 </div>
                 <div id="corinthian" class="four-feature-img">
@@ -183,7 +183,7 @@
 <script type="text/javascript">
 //<![CDATA[
     jQuery(function($) {
-        
+
         var owl = $('#<?php echo $sliderId; ?>');
         owl.owlCarousel({
 
