@@ -39,12 +39,17 @@
         $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->escapeHtml($_category->getName()).'" title="'.$this->escapeHtml($_category->getName()).'" /></p>';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
     }
+    $_categoryId = $_helper->categoryAttribute($_category, $_category->getId());
 ?>
 <div class="page-title category-title">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
         <a href="<?php echo $this->getRssLink() ?>" class="link-rss"><?php echo $this->__('Subscribe to RSS Feed') ?></a>
     <?php endif; ?>
-    <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ."&nbsp&nbspCHIMES "?></h1>
+    <?php if (($_categoryId == 6)||($_categoryId == 8)||($_categoryId == 5)): ?>
+    <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?></h1>
+  <?php else: ?>
+    <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ."&nbsp&nbspWIND&nbspCHIMES " ?></h1>
+    <?php endif; ?>
 </div>
 
 <?php echo $this->getMessagesBlock()->toHtml() ?>
