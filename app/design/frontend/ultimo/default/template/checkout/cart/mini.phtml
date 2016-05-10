@@ -49,7 +49,7 @@
 
     <a href="#header-cart" class="mini-cart-heading dropdown-heading cover skip-link skip-cart">
         <span>
-            <span class="icon ic ic-cart" style="color: #698c9d; font-size: 32px;"></span>
+            <span class="icon ic ic-cart" style="color: #698c9d;"></span>
             <?php if ($_cartQty > 0): ?>
                 <span class="count"><?php echo $_cartQty; ?></span>
             <?php endif; ?>
@@ -67,7 +67,7 @@
 
         </span>
     </a> <!-- end: heading -->
-    
+
     <?php $_items = $this->getRecentItems(); ?>
     <?php if (count($_items)): ?>
         <div id="header-cart" class="mini-cart-content dropdown-content left-hand block block-cart skip-content skip-content--style">
@@ -76,7 +76,7 @@
                 <?php if ($tmpHtml = $this->getChildHtml('block_mini_cart_above_products')): ?>
                     <div class="block_mini_cart_above_products"><?php echo $tmpHtml; ?></div>
                 <?php endif; ?>
-            
+
                 <div class="block-subtitle"><?php echo $this->__('Recently added item(s)') ?></div>
                 <ol id="cart-sidebar" class="mini-products-list clearer">
                 <?php foreach($_items as $_item): ?>
@@ -99,7 +99,7 @@
 
                 <div class="actions clearer">
                     <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('View all items in your shopping cart')) ?>" class="button btn-inline" onclick="setLocation('<?php echo $this->getUrl('checkout/cart') ?>')"><span><span><?php echo $this->__('View All') ?></span></span></button>
-                    
+
                     <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
                         <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Proceed to Checkout')) ?>" class="button btn-checkout btn-inline " onclick="setLocation('<?php echo $this->getCheckoutUrl(); ?>')"><span><span><?php echo $this->__('Proceed to Checkout') ?></span></span></button>
                         <?php echo $this->getChildHtml('extra_actions') ?>

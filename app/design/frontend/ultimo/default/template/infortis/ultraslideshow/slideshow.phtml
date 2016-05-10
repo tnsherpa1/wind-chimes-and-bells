@@ -78,7 +78,7 @@
     $hideSlideshowClass = '';
     if ($h->getCfg('general/hide'))
     {
-        $hideSlideshowClass = 'hide-below-768';
+        $hideSlideshowClass = 'hide-below-960';
     }
 
     //Slideshow strucural classes
@@ -101,7 +101,6 @@
     <?php endif; ?>
 
             <div class="the-slideshow-wrapper">
-
                 <div class="the-slideshow <?php echo implode(' ', $sliderClasses); ?>">
                     <div id="<?php echo $sliderId; ?>" class="slides">
                     <?php foreach ($slides as $bid): ?>
@@ -116,69 +115,18 @@
 
                 <?php if ($banners): ?>
                     <?php //Hide banners on mobile devices? "Yes" is default.
-                        $hideBannersClass = 'hide-below-768';
+                        $hideBannersClass = 'hide-below-960';
                         if ($h->getCfg('banners/hide') == false)
                             $hideBannersClass = '';
                     ?>
                     <div class="the-slideshow-banners slideshow-banners<?php echo $bannersGridClass . ' ' . $hideBannersClass; ?>"><?php echo $banners; ?></div>
                 <?php endif; ?>
-
             </div> <!-- end: the-slideshow-wrapper -->
-            <!-- Four Feature Boxes Wrapper Home Page -->
-            <table class="four-features">
-              <tr>
-                <td>
-                <div class="home-feature-wrapper">
-                  <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">
-                    <h4 class="home-feature">Personalize Your Chime</h4>
-                </div>
-                <div id="personalize" class="four-feature-img">
-                </div>
-                </a>
-                </div>
-                </td>
-                <td>
-                <div class="home-feature-wrapper">
-                  <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">
-                    <h4 class="home-feature">Shop Under $50.00</h4>
-                </div>
-                <div id="under-fifty" class="four-feature-img">
-                </div>
-                </a>
-                </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                <div class="home-feature-wrapper">
-               <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">
-                    <h4 class="home-feature">Precision Tuned</h4>
-                </div>
-                <div id="specific-notes" class="four-feature-img">
-                </div>
-                </a>
-                </div>
-                </td>
-                <td>
-                <div class="home-feature-wrapper">
-                <a href="#" style="overflow: hidden;">
-                <div class="four-feature-wrapper">
-                    <h4 class="home-feature">Corinthian Chimes</h4>
-                </div>
-                <div id="corinthian" class="four-feature-img">
-                </div>
-                </a>
-                </div>
-                </td>
-              </tr>
-            </table>
 
     <?php if($this->isPredefined()): ?>
         </div> <!-- end: the-slideshow-wrapper-outer -->
     <?php endif; ?>
+
 
 <script type="text/javascript">
 //<![CDATA[
@@ -229,3 +177,54 @@
 //]]>
 </script>
 <?php endif; //end: if slides ?>
+<!-- Four Feature Boxes Wrapper Home Page -->
+<table class="four-features">
+  <tr>
+    <td>
+      <div class="home-feature-wrapper">
+        <a href="#" style="overflow: hidden;">
+          <div class="four-feature-wrapper">
+            <h4 class="home-feature">Personalize Your Chime</h4>
+          </div>
+          <div id="personalize" class="four-feature-img">
+          </div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div class="home-feature-wrapper">
+        <a href="#" style="overflow: hidden;">
+          <div class="four-feature-wrapper">
+            <h4 class="home-feature">Shop Under $50.00</h4>
+          </div>
+          <div id="under-fifty" class="four-feature-img">
+          </div>
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="home-feature-wrapper">
+        <a href="#" style="overflow: hidden;">
+          <div class="four-feature-wrapper">
+            <h4 class="home-feature">Precision Tuned</h4>
+          </div>
+          <div id="specific-notes" class="four-feature-img">
+          </div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div class="home-feature-wrapper">
+        <a href="#" style="overflow: hidden;">
+          <div class="four-feature-wrapper">
+            <h4 class="home-feature">Corinthian Chimes</h4>
+          </div>
+          <div id="corinthian" class="four-feature-img">
+          </div>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>

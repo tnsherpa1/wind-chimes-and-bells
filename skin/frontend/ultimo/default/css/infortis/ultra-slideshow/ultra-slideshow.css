@@ -2,8 +2,6 @@
  * Ultra Slideshow
  */
 
-
-
 /* Slideshow wrapper
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -104,4 +102,32 @@ div.four-feature-img {
 .the-slideshow-wrapper:hover 	.fade-on-slideshow-wrapper-hover {
 	opacity:0.75;
 	filter:alpha(opacity=75);
+}
+/*Media Queries*/
+@media only screen and (min-width:772px) and (max-width:959px) {
+	.four-features {
+		margin-right:160px;
+	}
+}@media only screen and (min-width:960px) and (max-width: 991px) {
+	.four-features {
+		height:120px;
+	}
+	div.four-feature-img {
+		height:138px;
+		position: relative;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+	.the-slideshow-wrapper {
+		width:55%;
+	}
+	.four-features {
+		height:171px;
+	}
+	div.four-feature-img {
+		height:148px;
+		position: relative;
+	}
+
 }

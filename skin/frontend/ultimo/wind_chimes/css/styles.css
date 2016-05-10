@@ -1044,9 +1044,11 @@ ul.disc ul li { background:url(../images/infortis/_shared/cck/list/bullet-small.
 /* Mini-cart heading
 -------------------------------------------------------------- */
 .mini-cart .mini-cart-heading .ic {
-	font-size: 16px;
+	font-size: 2.2222em;
 	line-height: 1em;
 }
+.mini-cart .label {color:#4f7a99; font-size:1.2222em;}
+.mini-cart .caret {color:#4f7a99; font-size:2.2222em;}
 .mini-cart .mini-cart-heading .summary {}
 
 /* Mini-cart content
@@ -3676,3 +3678,4 @@ margin-top: -24px;
 width: 357px;
 font-size:1.1em;
 }
+/********** Media Queries ***********/
