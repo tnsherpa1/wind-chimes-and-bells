@@ -204,8 +204,8 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 	font-weight: normal;
 	white-space:nowrap;
 	text-align:center;
-	background-color:#ddd;
-	color:#333;
+	background-color:#698c9d;
+	color:#ffffff;
 	line-height:45px;
 	padding:0;
 
@@ -215,7 +215,7 @@ button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 	-o-transition:		color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 .button:hover {
-	background-color:#333;
+	background-color:#b2c081;
 	color:#fff;
 }
 
