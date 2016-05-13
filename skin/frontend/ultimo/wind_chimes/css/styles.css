@@ -620,13 +620,19 @@ p.required,
 .data-table thead th.wrap { white-space:normal; }
 
 .data-table tr.odd td,
-.data-table tr.odd th {border-left:1px solid #f5f5f5;}
+.data-table tr.odd th {}
 .data-table tr.odd td.last { border-right:none; }
 .data-table tr.odd {}
 .data-table tr.odd.last { border-bottom:#eee solid 1px; }
 
+.data-table tr.odd td.data {border-right: solid 4px #698c9d;border-left: solid 1px #c7cdd0}
+.data-table tr.even td.data {border-right: solid 4px #698c9d; border-left: solid 1px #c7cdd0;}
+.data-table tr.odd td.data.last {border-right:none; border-left: solid 1px #c7cdd0;}
+.data-table tr.even td.data.last {border-right:none; border-left: solid 1px #c7cdd0;}
+
+
 .data-table tr.even td,
-.data-table tr.even th { border-left:1px solid #f5f5f5; }
+.data-table tr.even th {}
 .data-table tr.even td.last { border-right:none; }
 .data-table tr.even { background-color:#DFE7EB; }
 
