@@ -42,31 +42,16 @@
       <col width="15%"/>
       <col width="35%"/>
       <tbody>
-        <?php $_values = array_values($_additional); ?>
-          <?php for($i = 0; $i < count($_additional); $i+=2): ?>
-            <?php $_data1 = $_values[$i]; ?>
-            <?php $_data2 = isset($_values[$i + 1]) ? $_values[$i + 1] : null; ?>
-            <tr>
-              <th class="label">
-                <?php echo $this->htmlEscape($this->__($_data1['label'])) ?>
-              </th>
-              <td class="data">
-                <?php echo $_helper->productAttribute($_product, $_data1['value'], $_data1['code']) ?>
-              </td>
-              <?php if ($_data2) : ?>
-                <th class="label">
-                  <?php echo $this->htmlEscape($this->__($_data2['label'])) ?>
-                </th>
-                <td class="data">
-                  <?php echo $_helper->productAttribute($_product, $_data2['value'], $_data2['code']) ?>
-                </td>
-              <?php else : ?>
-                <th class="label"></th>
-                <td class="data"></td>
-              <?php endif; ?>
-            </tr>
-            <?php endfor; ?>
-        </tbody>
+        <?php foreach ($_additional as $_data): ?>
+        <?php $_attribute = $_product->getResource()->getAttribute($_data['code']);
+        if (!is_null($_product->getData($_attribute->getAttributeCode())) && ((string)$_attribute->getFrontend()->getValue($_product) != '')) { ?>
+        <tr>
+            <th class="label"><?php echo $this->htmlEscape($this->__($_data['label'])) ?></th>
+            <td class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+        </tr>
+        <?php } ?>
+      <?php endforeach; ?>
+      </tbody>
     </table>
     <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>
 <?php endif;?>
