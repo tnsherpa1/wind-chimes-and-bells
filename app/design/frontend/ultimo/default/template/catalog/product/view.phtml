@@ -39,7 +39,7 @@
 	$section = array();
 	$relatedProductsHtml = '';
 	$upsellProductsHtml = '';
-	
+
 	//Related products.
 	//If related products not assigned to collateral data container.
 	if (!$theme->getCfg('product_page/collateral_related'))
@@ -138,7 +138,7 @@
 			<?php echo $this->getChildHtml('container_product_image_1'); ?>
 
 		</div>
-		
+
 		<div class="product-primary-column product-shop <?php echo $grid['primCol']; ?>">
 
 			<div class="product-name">
@@ -151,7 +151,7 @@
 						</div>
 					<?php endif; ?>
 			</div>
-			
+
 			<?php echo $this->getReviewsSummaryHtml($_product, false, true); //reviews ?>
 
 			<?php echo $this->getChildHtml('container_product_primary_1'); ?>
@@ -162,26 +162,28 @@
 			<?php endif; ?>
 
 			<?php echo $this->getChildHtml('alert_urls'); //alerts ?>
-			
+
 			<?php if ($extrahint_html = $this->getChildHtml('extrahint')): //qty increments ?>
 				<div class="extrahint-wrapper"><?php echo $extrahint_html; ?></div>
 			<?php endif; ?>
 			<!-- Audio Begins -->
-			<span class="audio-bar" style="display:none">    
+			<span class="audio-bar" style="display:none">
         <?php echo $_product->getAudioSample(); ?>
       </span>
-			
+
 			<div class="product-play-pause-box">
-				<?php echo $this->getChildHtml('product_play_pause_button'); ?>
+				<?php if($_product->getAudioSample()): ?>
+					<?php echo $this->getChildHtml('product_play_pause_button'); ?>
+				<?php endif; ?>
 			</div><!-- Audio Ends -->
 			<div <?php if ($useRichSnippets) echo $helperSnippets->getOfferItemscope(); ?>>
-				
+
 				<div class="product-type-data<?php echo $productTypeClasses; ?>"><?php echo $this->getChildHtml('product_type_data'); ?>
 				</div>
 				<?php echo $this->getTierPriceHtml(); ?>
 				<?php echo $priceProperties; ?>
 			</div> <?php //end: offers ?>
-			
+
 
 			<?php if (!$this->hasOptions()): //add to cart when no options (e.g. simple products) ?>
 				<?php if($_product->isSaleable()): ?>
@@ -217,7 +219,7 @@
 			<?php echo $this->getChildHtml('container_product_primary_2'); ?>
 
 		</div> <!-- end: product-shop -->
-		
+
 		<?php if (isset($grid['secCol'])): //(!empty($secondaryColUnits)): ?>
 
 			<div class="product-secondary-column <?php echo $grid['secCol']; ?> custom-sidebar-right">
@@ -300,7 +302,7 @@
 	<div class="box-additional <?php echo $grid['lowerPrimCol']; ?>">
 
 		<?php if (isset($p['lowerPrimCol_1'])) echo $p['lowerPrimCol_1']; ?>
-		
+
 		<?php echo $this->getChildHtml('product_additional_data') ?>
 
 		<?php echo $this->getChildHtml('reviews'); //Reviews ?>
