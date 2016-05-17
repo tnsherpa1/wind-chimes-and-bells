@@ -434,6 +434,9 @@
 			<block type="cms/block" name="block_footer_bottom">
 				<action method="setBlockId"><block_id>block_footer_bottom</block_id></action>
 			</block>
+			<block type="cms/block" name="block_footer_quicklinks">
+				<action method="setBlockId"><block_id>footer_quick_links</block_id></action>
+			</block>
 
 		</reference>
 

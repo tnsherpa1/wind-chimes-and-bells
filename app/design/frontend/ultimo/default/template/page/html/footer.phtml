@@ -46,24 +46,24 @@
 
 	<?php if (!empty($b['top'])): ?>
 
-	<div class="footer-top-container section-container">			
+	<div class="footer-top-container section-container">
 				<div class="section clearer links-wrapper-separators">
-				
+
 					<?php //Default Magento footer links (page.xml) ?>
 					<?php if (!empty($b['top']['footer_links'])): ?>
 						<div class="item item-left"><?php echo $b['top']['footer_links']; ?></div>
 					<?php endif; ?>
-					
+
 					<?php //Custom footer links - override default Magento footer links ?>
 					<?php if (!empty($b['top']['block_footer_links'])): ?>
 						<div class="item item-left"><?php echo $b['top']['block_footer_links']; ?></div>
 					<?php endif; ?>
-					
+
 					<?php //Secondary custom footer links ?>
 					<?php if (!empty($b['top']['block_footer_links2'])): ?>
 						<div class="item item-right"><?php echo $b['top']['block_footer_links2']; ?></div>
 					<?php endif; ?>
-					
+
 				</div> <!-- end: footer-top section -->
 	</div>
 
@@ -90,7 +90,7 @@
 			$b['primary_top']['bottomContainer'] = $tmp;
 		}
 	?>
-	
+
 	<?php if (!empty($b['primary']) || !empty($b['primary_bottom']) || !empty($b['primary_top'])): ?>
 			<div class="inner-container">
 
@@ -98,7 +98,7 @@
 				<div class="footer-primary-top grid12-12">
 					<div class="<?php if(!empty($b['primary'])) echo 'footer-primary-top-spacing '; ?>clearer">
 						<?php echo $b['primary_top']['bottomContainer']; ?>
-					</div> 
+					</div>
 				</div> <!-- end: footer-primary-top -->
 				<?php endif; ?>
 
@@ -107,27 +107,27 @@
 					<?php echo $b['primary']; ?>
 				</div> <!-- end: footer-primary section -->
 				<?php endif; ?>
-				
+
 				<?php if (!empty($b['primary_bottom'])): ?>
 				<div class="footer-primary-bottom grid12-12">
-					
+
 				</div> <!-- end: footer-primary-bottom -->
 				<?php endif; ?>
-			
+
 			</div> <!-- end: inner-container -->
-	
+
 	<?php endif; ?>
 
 	<?php
 		$b['secondary'] = $theme->getFormattedBlocks($this, 'block_footer_row2_column', $theme->getCfg('footer/links_column_auto_width'));
 	?>
-	
+
 	<?php if (!empty($b['secondary'])): ?>
 
 	<div class="footer-secondary-container section-container">
 		<div class="footer-secondary footer container">
 			<div class="inner-container">
-			
+
 				<?php if (!empty($b['secondary'])): ?>
 				<div class="clearer">
 					<?php echo $b['secondary']; ?>
@@ -137,7 +137,7 @@
 			</div> <!-- end: inner-container -->
 		</div> <!-- end: footer-secondary -->
 	</div>
-	
+
 	<?php endif; ?>
 
 	<?php
@@ -160,48 +160,38 @@
 	<div class="footer-bottom-container section-container">
 		<div class="footer-bottom footer container">
 			<div class="inner-container">
-				<!-- NEWSLETTER -->
-				<div class="<?php if(!empty($b['primary'])) echo 'footer-primary-bottom-spacing '; ?>clearer">
-					
+				<?php echo $this->getChildHtml('block_footer_quicklinks') ?>
+				<div class="<?php if(!empty($b['primary'])) echo 'footer-primary-bottom-spacing '; ?> col-md-4">
 						<?php if (!empty($b['primary_bottom']['left'])): ?>
-							<div class="item item-left clearer block_footer_primary_bottom_left">
+							<div class="block_footer_primary_bottom_left">
 								<?php echo $b['primary_bottom']['left']; ?>
 							</div>
 						<?php endif; ?>
-						
+
 						<?php if (!empty($b['primary_bottom']['right'])): ?>
-							<div class="item item-right clearer block_footer_primary_bottom_right">
+							<div class="block_footer_primary_bottom_right">
 								<?php echo $b['primary_bottom']['right']; ?>
 							</div>
 						<?php endif; ?>
-						
+
 						<?php if (!empty($b['primary_bottom']['newsletter'])): ?>
-						<div class="item item-right newsletter-wrapper clearer">
+						<div class="newsletter-wrapper col-md-12">
 							<?php echo $b['primary_bottom']['newsletter']; ?>
 						</div>
 						<?php endif; ?>
-					</div> 
-				<!-- NEWSLETTER ENDS -->
-				<div class="clearer">
-					<?php if (!empty($b['bottom']['block_footer_payment'])): ?>
-						<div class="item item-right block_footer_payment"><?php echo $b['bottom']['block_footer_payment']; ?></div>
-					<?php endif; ?>
-					
-					<?php if (!empty($b['bottom']['store_switcher'])): ?>
-						<div class="item item-right"><?php echo $b['bottom']['store_switcher']; ?></div>
-					<?php endif; ?>
-				</div> <!-- end: footer-bottom section -->
+						<?php if (!empty($b['bottom']['block_footer_payment'])): ?>
+							<div class="block_footer_payment col-md-12"><?php echo $b['bottom']['block_footer_payment']; ?></div>
+						<?php endif; ?>
+				</div>
 				<!-- Copyright Footer -->
-					<?php if (!empty($b['bottom']['copyright'])): ?>
-							<div class="footer-copyright"><?php echo $b['bottom']['copyright']; ?></div>
-					<?php endif; ?>
+				<?php if (!empty($b['bottom']['copyright'])): ?>
+					<div class="footer-copyright col-md-12"><?php echo $b['bottom']['copyright']; ?></div>
+				<?php endif; ?>
 			</div> <!-- end: inner-container -->
 		</div> <!-- end: footer-bottom -->
 	</div>
 
 	<?php endif; ?>
-	
+
 	<a id="scroll-to-top" class="ic ic-up" href="#top"></a>
-
 </div> <!-- end: footer-container -->
-

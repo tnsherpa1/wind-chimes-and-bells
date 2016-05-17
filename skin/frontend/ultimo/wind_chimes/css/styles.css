@@ -3191,11 +3191,8 @@ div.section.clearer.links-wrapper-separators {
 	padding-top:20px;
 	margin-top:10px;
 }
-
-#bbb {
-	padding-bottom: 5px;
-	margin-left: 285px;
-}
+.block_footer_payment img {width:55px;float:right;}
+#bbb img {width:80px;float:right;}
 /* Footer secondary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
@@ -3214,7 +3211,7 @@ div.section.clearer.links-wrapper-separators {
 
 /* Newsletter form
 -------------------------------------------------------------- */
-#subscribe-form {}
+#subscribe-form {padding-top: 10px;}
 #subscribe-form form { display:block; }
 #subscribe-form label { float:left; margin:0 5px 0 0; line-height:36px; font-weight:normal; position: relative; }
 #subscribe-form .input-box { float:left; margin:0 5px 5px 0; position:relative; }
@@ -3245,7 +3242,7 @@ div.section.clearer.links-wrapper-separators {
 
 /* Other elements
 -------------------------------------------------------------- */
-.footer-copyright { font-size:11px; line-height:16px; margin:4px 0; }
+.footer-copyright { font-size:14px; line-height:16px; margin:4px 0; }
 
 /* Scroll to top button
 -------------------------------------------------------------- */
@@ -3682,10 +3679,5 @@ font-size:2.5em;
 color: #E47911;
 }
 
-.footer-copyright {
-float: left;
-margin-top: -24px;
-width: 357px;
-font-size:1.1em;
-}
+
 /********** Media Queries ***********/
