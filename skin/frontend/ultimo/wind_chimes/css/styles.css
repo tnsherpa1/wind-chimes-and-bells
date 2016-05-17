@@ -3681,3 +3681,9 @@ color: #E47911;
 
 
 /********** Media Queries ***********/
+@media (min-width:480px) and (max-width:768px){
+  .products-grid .link-compare {
+    margin-top: -49px;
+		margin-left: 125px;
+  }
+ }
