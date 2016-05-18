@@ -129,3 +129,30 @@ div.four-feature-img {
 	}
 
 }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+	.four-features {
+		width:360px;
+		height:360px;
+		margin-right:20px;
+	}
+	div.four-feature-img {
+		width:180px;
+		height:180px;
+		position: relative;
+	}
+	.home-feature-wrapper .home-feature {
+		width: 180px;
+	}
+	div.four-feature-wrapper {
+		width:180px;
+	}
+}
+@media only screen
+and (max-device-width : 375px) {
+	table.four-features {
+		display: none;
+	}
+}
