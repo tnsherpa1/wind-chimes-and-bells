@@ -1773,7 +1773,7 @@ ul #nav .nav-regular {
 	padding: 0 30px;
 }
 div.container {
-	padding-right:0;
+	padding:0;
 }
 /* Grid: override grid elements to change size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3677,6 +3677,16 @@ text-align: center;
 .section-title.padding-right {
 font-size:2.5em;
 color: #E47911;
+}
+.home-page-promo {
+	padding-left: 6%;
+	margin: 5px 0;
+}
+.promo-text {
+	color: #95ac64;
+}
+#nav {
+	margin-bottom:0;
 }
 
 

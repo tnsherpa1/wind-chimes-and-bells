@@ -125,6 +125,9 @@
 			<block type="core/text_list" name="main_bottom" as="main_bottom" translate="label">
 				<label>Postscript, Full Width</label>
 			</block>
+			<block type="cms/block" name="block_promo">
+            <action method="setBlockId"><block_id>block_promo</block_id></action>
+        </block>
 		</reference>
 
 

@@ -43,8 +43,10 @@
     <div class="page">
         <?php echo $this->getChildHtml('header') ?>
         <div class="main-container col1-layout">
-            <div class="main-top-container"><?php echo $this->getChildHtml('main_before_top') ?></div>
-            <div class="main container">
+            <div class="main-top-container"><?php echo $this->getChildHtml('main_before_top') ?>
+            </div>
+            <div class="container">
+                <?php echo $this->getChildHtml('block_promo') ?>
                 <div class="inner-container">
                     <?php echo $this->getChildHtml('breadcrumbs') ?>
                     <div class="preface"><?php echo $this->getChildHtml('preface') ?></div>
