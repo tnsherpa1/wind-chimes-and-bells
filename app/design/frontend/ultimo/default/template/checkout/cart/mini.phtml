@@ -98,10 +98,10 @@
                 </div>
 
                 <div class="actions clearer">
-                    <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('View all items in your shopping cart')) ?>" class="button btn-inline" onclick="setLocation('<?php echo $this->getUrl('checkout/cart') ?>')"><span><span><?php echo $this->__('View All') ?></span></span></button>
+                    <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('View all items in your shopping cart')) ?>" class="button btn-checkout btn-inline" onclick="setLocation('<?php echo $this->getUrl('checkout/cart') ?>')"><span><span><?php echo $this->__('View All') ?></span></span></button>
 
                     <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
-                        <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Proceed to Checkout')) ?>" class="button btn-checkout btn-inline " onclick="setLocation('<?php echo $this->getCheckoutUrl(); ?>')"><span><span><?php echo $this->__('Proceed to Checkout') ?></span></span></button>
+                        <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Checkout')) ?>" class="button btn-checkout btn-inline " onclick="setLocation('<?php echo $this->getCheckoutUrl(); ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
                         <?php echo $this->getChildHtml('extra_actions') ?>
                     <?php endif; ?>
                 </div>
