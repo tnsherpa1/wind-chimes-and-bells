@@ -54,7 +54,7 @@
         <div class="buttons-set">
             <p class="required">&nbsp;</p>
             <?php if ($this->getQuote()->isAllowedGuestCheckout()): ?>
-                <button id="onepage-guest-register-button" type="button" class="button" onclick="checkout.setMethod();"><span><span><?php echo $this->__('Continue') ?></span></span></button>
+                <button id="onepage-guest-register-button" type="button" class="button" onclick="checkout.setMethod();"><span><span><?php echo $this->__('Continue ') ?></span></span>&rangle;&rangle;</button>
             <?php elseif ($this->helper('checkout')->isCustomerMustBeLogged()): ?>
                 <button id="onepage-guest-register-button" type="button" class="button" onclick="window.location='<?php echo $this->helper('checkout/url')->getRegistrationUrl();?>'"><span><span><?php echo $this->__('Register') ?></span></span></button>
             <?php else: ?>
