@@ -11,7 +11,7 @@ $k(document).ready(function() {
 			$k("#audioControl").removeClass('fa-play-circle-o');
 			$k("#audioControl").addClass('fa-pause-circle-o');
 			$playAudioSample.play();
-		} 
+		}
 		else {
 			$k("#audioControl").removeClass('fa-pause-circle-o');
 			$k("#audioControl").addClass('fa-play-circle-o');
@@ -19,6 +19,4 @@ $k(document).ready(function() {
 		}
 	});
 
-
 });
-

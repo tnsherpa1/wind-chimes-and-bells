@@ -171,23 +171,17 @@
         <div class="item">
 
             <div class="product-image-wrapper" style="max-width:<?php echo $imgWidth; ?>px;">
-
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" class="product-image">
-
                     <?php if ($lazy): ?>
                         <img class="lazyOwl" data-src="<?php echo $helpImg->getImg($_product, $imgWidth, $imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" />
                     <?php else: ?>
                         <img src="<?php echo $helpImg->getImg($_product, $imgWidth, $imgHeight, 'small_image'); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true); ?>" />
                     <?php endif; ?>
-
                     <?php if ($theme->getCfg('category/alt_image')): ?>
                         <?php echo $theme->getAltImgHtml($_product, $imgWidth, $imgHeight); ?>
                     <?php endif; ?>
-
                     <?php echo $helpLabels->getLabels($_product); //Product labels ?>
                 </a>
-
-
             </div> <!-- end: product-image-wrapper -->
 
             <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h3>
